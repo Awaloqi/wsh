@@ -1,0 +1,174 @@
+.registration-section {
+  .registration-container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: #fafafa;
+    clear: both;
+
+    @media (min-width: $screen-sm) and (max-width: $screen-lg - 1px) {
+      padding-top: 40px;
+
+      .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+
+        > .row {
+          margin: 0;
+        }
+
+        .register-form-section {
+          max-width: 100%;
+        }
+
+        .register-container {
+          padding: 0;
+        }
+
+        .registration-socialmedia,
+        .registration-form {
+          width: 50%;
+        }
+      }
+    }
+
+    @media (min-width: $screen-sm) and (max-width: $screen-md-max) {
+      padding-top: 0;
+
+      .container {
+        .registration-socialmedia,
+        .registration-form {
+          padding-right: 40px;
+          padding-left: 40px;
+        }
+      }
+    }
+
+    @media (max-width: $screen-xs) {
+      padding-top: 40px;
+
+      .container {
+        .registration-socialmedia {
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+
+  .register-form-section {
+    display: table;
+
+    .registration-socialmedia {
+      display: table-cell;
+      width: 50%;
+      padding: 45px 40px;
+      vertical-align: middle;
+
+      .registration-description {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: $grey800;
+        font-weight: 300;
+      }
+
+      .text-alter {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .btn-google {
+        margin-top: 50px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        display: inline-block;
+        width: calc(50% - 10px);
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      @media (max-width: $screen-xs) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      @media (max-width: $screen-xs) {
+        display: inline-block;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 0;
+
+        p {
+          margin-top: 0;
+          margin-bottom: 30px;
+        }
+
+        .text-alter {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+
+        .btn-google {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .registration-form {
+      @extend .registration-socialmedia;
+      border-right: 1px solid $grey300;
+
+      h1 {
+        margin: 0 0 24px;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .form-submit {
+        margin-top: 25px;
+      }
+
+      @media (max-width: $screen-xs) {
+        border-right: 0;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      display: block;
+      max-width: 768px;
+      border-radius: 0;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding-bottom: 60px;
+    }
+  }
+
+  .privacy-policy {
+    padding-top: 25px;
+    color: $nav-tab-color;
+    font-size: $size-14;
+    line-height: 24px;
+    text-align: center;
+
+    a {
+      color: $body-color;
+    }
+    @media (max-width: $screen-sm-max) {
+      margin-top: 18px;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding: 0;
+      margin: 0;
+
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}

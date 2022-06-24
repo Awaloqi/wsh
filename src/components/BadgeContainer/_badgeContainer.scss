@@ -1,0 +1,67 @@
+.badge-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 10%;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.badge-main{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+    
+        
+    }
+}
+
+.badgeimageMain{
+    height: 120px;
+}
+.subtag{
+    color: #8c8c8c80;
+    font-size: small;
+}
+
+.badge-section{
+    padding-bottom: 50px;
+    .badge-container-new{
+        border-top: none;
+        padding: 2% 4%;
+        .badge-main{
+            height: 200px;
+            margin: 15px;
+            padding-left: 10px;
+            box-shadow: 0px 0px 70px 0px #bfdfed;
+            -webkit-box-shadow: 0px 0px 70px 0px #bfdfed;
+            -moz-box-shadow: 0px 0px 70px 0px #bfdfed;
+            align-items: flex-start;
+            img{
+                height: 85px;
+                margin-left: 5px;
+            }
+            p{
+                padding-left: 25px;
+            }
+            .tagline{
+                font-size: 20px;
+                font-weight: 600;
+                color: #39b6ed;
+                text-align: start;
+            }
+            .subtag{
+                font-size: 16px;
+                font-weight: 600;
+                color: #2c2c2c;
+                text-align: start;
+            }
+        }
+    }
+}

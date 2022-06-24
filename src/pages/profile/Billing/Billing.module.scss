@@ -1,0 +1,194 @@
+@import '../../../scss/site-variables';
+
+.cards {
+  flex-grow: 1;
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    align-self: center;
+  }
+}
+
+.card {
+  padding: 27px 30px 54px;
+  border: 1px solid $grey300;
+  background-color: $white;
+}
+
+.card + .card {
+  margin-top: 40px;
+}
+
+.payment {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.cardDescription {
+  margin-right: 24px;
+}
+
+.addPayment {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon {
+  align-self: flex-end;
+  margin-right: 10px;
+  color: $grey600;
+  font-size: 24px;
+}
+
+.plusIcon {
+  display: inline-block;
+  width: 24px;
+  margin-right: 10px;
+  color: $primary900;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.cards__button {
+  margin-top: 32px;
+  @media (max-width: 767px) {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+    @media screen and (max-width: $screen-sm) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  position: absolute;
+  z-index: 1;
+  bottom:40%;
+  width: 260px;
+  padding: 8px;
+  margin-bottom: -40px;
+  margin-left: 150px;
+  
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: #2ec35f;
+  font-size: small;
+    @media screen and (max-width: $screen-sm) {
+    margin-right: auto;
+  margin-bottom: -25px;
+    margin-left: auto;
+
+
+  }
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 40%;
+  left: -1%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+  margin-left: -5px;
+  content: "";
+    transform: rotate(90deg);
+     @media screen and (max-width: $screen-sm) {
+     top:100%;
+      left: 50%;
+    transform: rotate(360deg);
+
+
+  }
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  visibility: visible
+}
+
+/* Add animation (fade in the popup) */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Popup container */
+.popupCard {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popupCard .popuptextCard {
+  position: absolute;
+  z-index: 1;
+  bottom:40%;
+  width: 260px;
+  padding: 8px;
+  margin-bottom: -45px;
+  margin-left: 100px;
+  
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: #2ec35f;
+  font-size: small;
+    @media screen and (max-width: $screen-sm) {
+  margin-bottom: -150px;
+    margin-left: -180px;
+
+  }
+}
+
+/* Popup arrow */
+.popupCard .popuptextCard::after {
+  position: absolute;
+  top: 40%;
+  left: -1%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+  margin-left: -5px;
+  content: "";
+    transform: rotate(90deg);
+     @media screen and (max-width: $screen-sm) {
+      top:-9%;
+      left: 85%;
+    transform: rotate(180deg);
+
+
+  }
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  visibility: visible
+}

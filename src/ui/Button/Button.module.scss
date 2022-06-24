@@ -1,0 +1,206 @@
+@import '../../scss/site-variables';
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 37px;
+  border: 3px solid transparent;
+  background-color: $white;
+  border-radius: 1.875rem;
+  color: $primary900;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+.button:hover {
+  color: $primary900;
+  text-decoration: none;
+}
+
+.button:not(:disabled):focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: 0;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+a.button.disabled,
+fieldset:disabled a.button {
+  pointer-events: none;
+}
+
+.button_loading {
+  color: transparent !important;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    animation: loadingAnimation 720ms steps(8, start) infinite reverse;
+    background-image: url('./loading.svg');
+    background-size: cover;
+    border-radius: 100%;
+    color: $white;
+    content: '';
+  }
+}
+
+@keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button > svg {
+  flex-shrink: 0;
+  margin-left: 10px;
+  font-size: 19px;
+  vertical-align: text-top;
+}
+
+.button_primary {
+  border: 3px solid $primary600;
+  background-color: $primary500;
+  color: $white;
+}
+
+.button_primary:hover {
+  background-color: $primary400;
+  color: $white;
+}
+
+.button_primary:not(:disabled):active {
+  background-color: $primary600;
+  color: $white;
+}
+
+.button_primary_outline {
+  border-color: $primary500;
+  &.button_loading::before {
+    background-image: url('loading_blue.svg');
+  }
+}
+
+.button_primary_outline:hover {
+  background-color: $primary100;
+}
+
+.button_primary_outline:not(:disabled):active {
+  background-color: $primary200;
+}
+
+.button_accent {
+  border: 3px solid $accent600;
+  background-color: $accent500;
+  color: $white;
+}
+
+.button_accent:hover {
+  background-color: $accent400;
+  color: $white;
+}
+
+.button_accent:not(:disabled):active {
+  background-color: $accent600;
+  color: $white;
+}
+
+.button_outline_accent {
+  border-color: $accent500;
+  color: $accent500;
+  &.button_loading::before {
+    background-image: url('loading_green.svg');
+  }
+}
+
+.button_outline_accent:hover {
+  background-color: $accent100;
+  color: $accent500;
+}
+
+.button_outline_accent:not(:disabled):active {
+  background-color: $accent200;
+}
+
+.button_small {
+  padding: 7px 40px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: initial;
+  text-transform: none;
+}
+
+.button_medium {
+  padding: 10px 32px;
+  letter-spacing: 2.29px;
+}
+
+.button_block {
+  display: block;
+  width: 100%;
+}
+
+.button_icon {
+  position: relative;
+  display: inline-flex;
+  width: 76px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 33px;
+  border-radius: 50%;
+
+  @media (max-width: $screen-xs) {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 23px;
+  }
+
+  > svg {
+    margin-left: 0;
+    font-size: 25px;
+
+    @media (max-width: $screen-xs) {
+      font-size: 18px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 87px;
+    right: 0;
+    left: 0;
+    color: $primary900;
+    content: attr(title);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: normal;
+
+    @media (max-width: $screen-xs) {
+      top: 77px;
+    }
+  }
+}

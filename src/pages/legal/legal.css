@@ -1,0 +1,125 @@
+.legal_container {
+  max-width: 800px;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 67px 0 20px;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+}
+.closeBtn span {
+  margin-left: 12px;
+}
+.closeBtn button {
+  border: 0;
+  background-color: #FFFFFF;
+  color: #003459;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.29px;
+}
+.closeBtn svg {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.app .page-container.legal_content {
+  display: block;
+  padding-bottom: 100px;
+  color: #003459;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.71;
+}
+.app .page-container.legal_content > *:last-child {
+  padding-bottom: 50px;
+}
+.app .page-container.legal_content h1 {
+  margin-bottom: 36px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.app .page-container.legal_content h2 {
+  margin: 40px 0 0;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+}
+.app .page-container.legal_content h3 {
+  margin: 38px 0 8px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.app .page-container.legal_content h4 {
+  margin: 40px 0 30px;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+}
+.app .page-container.legal_content ul,
+.app .page-container.legal_content ol {
+  padding-left: 18px;
+  margin: 0;
+}
+.app .page-container.legal_content ul li,
+.app .page-container.legal_content ol li {
+  margin-top: 30px;
+}
+.app .page-container.legal_content ol {
+  padding-left: 0;
+  margin: 0;
+}
+.app .page-container.legal_content ol li {
+  position: relative;
+  padding-left: 18px;
+  list-style: none !important;
+}
+.app .page-container.legal_content ol li::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #003459;
+  border-radius: 50%;
+  content: "";
+}
+.app .page-container.legal_content p {
+  margin: 30px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.app .page-container.legal_content .packages-selection .badge {
+  display: none;
+}
+
+.info {
+  margin-top: 50px;
+}
+.info p {
+  margin: 0;
+}
+
+.price {
+  color: #003459;
+}
+.price p {
+  margin: 10px 0;
+}
+
+.monospace {
+  font-family: Courier, monospace;
+}/*# sourceMappingURL=legal.css.map */

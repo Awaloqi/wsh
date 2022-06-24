@@ -1,0 +1,1 @@
+export { HeroPricing } from './HeroPricing';

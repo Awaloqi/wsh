@@ -1,0 +1,298 @@
+@import '../../scss/site-variables';
+
+.packages-selection {
+  margin-top: 64px;
+
+  @media (max-width: $screen-xs) {
+    margin-top: 24px;
+  }
+  .radio-btns {
+    display: none;
+  }
+
+  &.form {
+    .radio-btns {
+      @media (max-width: $screen-xs) {
+        display: block;
+      }
+      text-align: center;
+
+      .btn-group {
+        display: flex;
+        margin-top: 24px;
+        button {
+          width: 100%;
+          height: 24px;
+          padding: 2px 0;
+          border: solid 0.5px #ddd;
+          background-color: $white;
+          border-radius: 3px;
+          color: $primary900;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.51px;
+          line-height: 1.67;
+
+          &.active {
+            &.PAYC {
+              background-color: $primary500;
+              color: $white;
+            }
+
+            &.GOLD,
+            &.PLATINUM {
+              background-color: $accent500;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .table {
+      background-color: $white;
+      .col {
+        @media (max-width: $screen-xs) {
+          border: 0;
+        }
+        @media (min-width: $screen-sm) {
+          // height: 618px;
+        }
+
+        .header {
+          @media (max-width: $screen-xs) {
+            // height: 40px;
+            padding-top: 0;
+
+            .title {
+              display: none !important;
+            }
+          }
+        }
+
+        .radio-btn-container {
+          display: flex;
+          height: 35px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .header-image {
+    display: none;
+    text-align: center;
+    @media (max-width: $screen-xs) {
+      display: block;
+    }
+  }
+
+  .table {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    .header-image {
+      display: none;
+    }
+    @media (max-width: $screen-xs) {
+      flex-direction: column-reverse;
+
+      .header-image {
+        display: block;
+      }
+    }
+
+    .col {
+      display: inline-block;
+      // height: 612px;
+      border: solid 1px #e0e0e0;
+      @media (max-width: $screen-xs) {
+        display: block;
+        margin-bottom: 40px;
+      }
+
+      .header {
+        // height: 150px;
+        padding-top: 30px;
+        margin-bottom: 12px;
+        color: $primary900;
+        font-stretch: normal;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        text-align: center;
+
+        .title {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+
+        .price {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.4;
+        }
+
+        .desc {
+          margin-top: 10px;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 1.2;
+        }
+      }
+
+      .item {
+        display: flex;
+        height: 56px;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 900px) {
+          justify-content: center;
+        }
+        @media (min-width: $screen-xs) {
+          &:nth-of-type(2n + 3) {
+            background-color: rgba(238, 238, 238, 0.6);
+          }
+        }
+
+        .left {
+          display: none;
+
+          p {
+            display: block;
+            margin: 0;
+            color: $primary900;
+            font-size: 12px;
+            font-stretch: normal;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 2;
+          }
+
+          p.sub {
+            margin-top: -5px;
+            color: #757575;
+            font-size: 12px;
+            font-stretch: normal;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 2;
+          }
+          @media (max-width: $screen-xs) {
+            display: block;
+            text-align: left;
+          }
+        }
+
+        .right {
+          p {
+            margin: 0;
+            font-size: 18px;
+            font-stretch: normal;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1.56;
+            text-align: center;
+          }
+
+          @media (max-width: $screen-xs) {
+            p {
+              float: right;
+            }
+          }
+        }
+
+        .check {
+          color: $grey600;
+          font-size: 48px;
+          &.active {
+            color: $accent500;
+          }
+        }
+      }
+
+      &.description {
+        flex: 2.25;
+
+        .img-container {
+          width: 100%;
+          text-align: center;
+        }
+
+        .item {
+          justify-content: flex-start;
+          text-align: left;
+
+          .left {
+            display: block;
+            margin-left: 20px;
+          }
+        }
+
+        @media (max-width: $screen-xs) {
+          display: none;
+        }
+      }
+
+      &.stats {
+        flex: 1;
+        border-left-color: transparent;
+
+        text-align: center;
+        @media (max-width: $screen-xs) {
+          width: 100%;
+          border-left-color: #e0e0e0;
+        }
+
+        &.wider {
+          position: relative;
+          width: 30%;
+          flex: 2;
+          @media (max-width: $screen-xs) {
+            width: 100%;
+          }
+
+          .header {
+            padding-top: 6px;
+
+            .title,
+            .price,
+            .desc {
+              font-weight: bold;
+            }
+
+            .title {
+              margin-top: 24px;
+            }
+          }
+
+          .badge {
+            @media (max-width: $screen-xs) {
+              display: none;
+            }
+            position: absolute;
+            top: -13px;
+            right: 0;
+            left: 0;
+            width: 108px;
+            height: 24px;
+            padding: 2px;
+            margin: 0 auto;
+            background-color: $accent500;
+            border-radius: 3px;
+            color: $white;
+
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

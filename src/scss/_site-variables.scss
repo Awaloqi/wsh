@@ -1,0 +1,188 @@
+// Table of Content
+
+// 1.	Colors
+// 2.	Border Width
+// 3.	Font Sizes
+// 4.	Circle
+// 5.	Card Size
+// 6.	Social Icons Size
+// 7.	Inputs
+// 8.	Pagination
+// 9.	Progress Bar
+// 10.	Buttons Size
+		// Btn-sm size
+// 11. Arrow Buttons
+// 12  Screen Sizes
+
+// Primary color
+$primary900                 :   #003459;
+$primary800                 :   #2F5976;
+$primary700                 :   #0F75A2;
+$primary600                 :   #1395CD;
+$primary500                 :   #39B6ED;
+$primary400                 :   #74CBF2;
+$primary300                 :   #A5E3FF;
+$primary200                 :   #C4ECFE;
+$primary100                 :   #E2F8FF;
+
+// Accent color
+$accent900                 :   #0C3918;
+$accent800                 :   #15612B;
+$accent700                 :   #2F7B40;
+$accent600                 :   #1DAE43;
+$accent500                 :   #2EC35F;
+$accent400                 :   #6AD57E;
+$accent300                 :   #A6E9AE;
+$accent200                 :   #C4F0C9;
+$accent100                 :   #DAFDDD;
+
+// Yello
+$site-yellow 				:	#F5A623;
+
+// Red
+$site-red 					:	#ED3939;
+
+// Grey
+$grey900        			:	#212121;
+$grey800    				:	#757575;
+$grey700        		    :	#909090;
+$grey600        			:	#BDBDBD;
+$grey500          			:	#CCCCCC;
+$grey400            		:	#E0E0E0;
+$grey300        			:	#EEEEEE;
+$grey200            		:	#F5F5F5;
+$grey100            		:	#FAFAFA;
+
+$body-color					:	$primary900;
+
+$facebook-color				:	#446199;
+$twitter-color				:	#01aaed;
+$email-color				:	#3bb3ef;
+
+
+$nav-tab-color				:	#AFAFAF;
+
+// White
+$white						:	#FFFFFF;
+
+// Transparent
+$transparent				:	rgba(0,0,0,0);
+
+// Nav Link Color
+$nav-link-color				:	$body-color;
+
+// Shadows color
+$shadow-color				:	rgba(0,0,0,0.1);
+
+// Border Colors
+$border-blue				:	$primary500;
+$border-green				:	$accent500;
+$border-grey				:	$grey900;
+$border-grey-light			:	$grey400;
+
+// Input Border Color
+$input-border-color			:	$grey400;
+
+// hr color
+$hr-color					:	$grey300;
+$disabled-color				:	$grey300;
+
+// text colors
+$text-dark					:	$grey900;
+$text-medium				:	$grey600;
+$text-disabled				:	$disabled-color;
+$text-blue					:	$primary500;
+$text-green					:	$accent500;
+
+
+// Borders Width
+$border-width-2				:	2px;
+$border-width-1				:	1px;
+$border-solid				:   solid;
+
+
+// Fonts
+
+$font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+// font-sizes
+$size-50				:   50px;
+$size-42				:   42px;
+$size-40				:   40px;
+$size-30				:   30px;
+$size-26				:   26px;
+$size-24				:   24px;
+$size-20				:   20px;
+$size-18				:   18px;
+$size-16				:   16px;
+$size-15				:   15px;
+$size-14				:   14px;
+$size-13				:   13px;
+$size-12				:   12px;
+$size-10				:   10px;
+
+
+// Circle
+$circle 				:	100%;
+
+// Card Size
+$card-width				:	95px;
+$card-height			:	95px;
+
+// Social Media Icons Size
+$icon-width				:	22px;
+$icon-height			:	22px;
+
+// Input Height
+$input-height			:	48px;
+
+// Input Color
+$input-color 			:	$grey600;
+
+// Pagination Arrow Size
+$arrow-width			:	36px;
+$arrow-height			:	36px;
+
+// Progress Bar
+$progress-bar-color		:	#E8E9EA;
+
+// Buttons Size
+// btn-sm size
+$btn-sm-min-width			:	131px;
+$btn-sm-min-height			:	31px;
+$btn-big-min-width			:	268px;
+$btn-big-min-height			:	42px;
+$btn-oval-radius			:	25px;
+$btn-default-color			:	$grey600;
+$btn-facebook-bgcolor 		:	#3B579D;
+$btn-google-bgcolor 		:	$white;
+$btn-google-border  		:	#979797;
+$btn-google-color   		:	#5D5D5D;
+$btn-danger-border			:	#d9534f;
+
+// Arrow Buttons
+$arrow-btn-width			:	76px;
+$arrow-btn-height			:	76px;
+$arrow-btn-bg-color			:	rgba(255,255,255,0.7);
+$arrow-btn-bg-gradient		:	linear-gradient(180deg, #FDFDFD 0%, #E7E9F3 88.27%, #D8DBE7 100%);
+
+$arrow-inner-circle-width	:	60px;
+$arrow-inner-circle-height	:	60px;
+
+$arrow-round-btn-width			:	236px;
+$arrow-round-btn-height			:	70px;
+$arrow-round-inner-circle-width	:	217px;
+$arrow-round-inner-circle-height:	50px;
+
+// Screen Sizes
+$screen-lg					:	1200px;
+$screen-md					:	992px;
+$screen-md-max				:	$screen-md - 1px;
+$screen-sm-max				:	799px;
+$screen-sm					:	768px;
+$screen-xs					:	767px;
+
+// Footer color
+//$footer-text-color			:	$nav-tab-color;
+$footer-text-color			:	$grey800;

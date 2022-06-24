@@ -1,0 +1,135 @@
+.hero_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .hero_content {
+    flex-direction: column;
+    padding-top: 15%;
+  }
+}
+
+.hero_block {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+@media (min-width: 1024px) {
+  .hero_block {
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .hero_block {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .centeration {
+    align-self: center;
+  }
+}
+
+.hero {
+  background-color: #E2F8FF;
+}
+
+.hero_title {
+  margin: 0 0 32px;
+  color: #39B6ED;
+  font-size: 36px;
+  line-height: 48px;
+}
+@media (max-width: 768px) {
+  .hero_title {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero_title {
+    margin-bottom: 40px;
+  }
+}
+
+.hero_subtitle {
+  margin: 0 0 32px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .hero_subtitle {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_subtitle {
+    font-size: xx-large;
+    line-height: 28px;
+  }
+}
+
+.hero_info {
+  margin: 0 0 32px;
+  color: #003459;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .hero_info {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_info {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.hero_button {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .hero_button {
+    display: inline-flex;
+  }
+}
+
+.hero_image {
+  display: block;
+  width: 120px;
+  margin: 0 auto 32px;
+}
+@media (max-width: 768px) {
+  .hero_image {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .hero_image {
+    width: 224px;
+    order: 1;
+    margin: 0 60px 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_image {
+    width: 400px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .hero_image {
+    width: 400px;
+  }
+}/*# sourceMappingURL=Hero2.module.css.map */

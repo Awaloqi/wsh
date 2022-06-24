@@ -1,0 +1,89 @@
+@import '../../../scss/site-variables';
+
+.information {
+  flex-grow: 1;
+  padding: 27px 30px 54px;
+  border: 1px solid $grey300;
+  background-color: $white;
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    align-self: center;
+  }
+}
+
+.information__button {
+  margin-top: 12px;
+  @media (max-width: 767px) {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  position: absolute;
+  z-index: 1;
+  bottom:90%;
+  width: 260px;
+  padding: 8px;
+  margin-bottom: -20px;
+  margin-left: 150px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: #2ec35f;
+  font-size: small;
+    @media screen and (max-width: $screen-sm) {
+    margin-right: auto;
+  margin-bottom: -30px;
+    margin-left: auto;
+
+  }
+    
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 40%;
+  left: -1%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+  margin-left: -5px;
+  content: "";
+    transform: rotate(90deg);
+    @media screen and (max-width: $screen-sm) {
+      top:100%;
+      left: 50%;
+    transform: rotate(360deg);
+
+
+  }
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  visibility: visible
+}
+
+/* Add animation (fade in the popup) */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

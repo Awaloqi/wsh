@@ -1,0 +1,61 @@
+version: 2.1
+
+executors:
+  build-executor:
+    machine: true
+
+aliases:
+  - &build_environment
+      executor: build-executor
+
+  - &deploy_to_heroku
+    - checkout
+    - deploy_to_heroku
+
+# Commands
+commands:
+  deploy_to_heroku:
+    description: "Deploy applicaton to Heroku"
+    steps:
+      - run:
+          command: |
+            echo "Moved to Github actions"
+      # - run:
+      #     command: |
+      #       echo "
+      #       build:
+      #         config:
+      #           REACT_APP_GOOGLE_PLACES_API_KEY:  ${REACT_APP_GOOGLE_PLACES_API_KEY}
+      #           REACT_APP_POS_DISCOUNT_PASSWORDS: ${REACT_APP_POS_DISCOUNT_PASSWORDS}
+      #           REACT_APP_SENTRY_DSN:             ${REACT_APP_SENTRY_DSN}
+      #           REACT_APP_STRIPE_PUBLIC_KEY:      ${REACT_APP_STRIPE_PUBLIC_KEY}
+      #           REACT_APP_GOOGLE_ANALYTICS_ID:    ${REACT_APP_GOOGLE_ANALYTICS_ID}
+      #           REACT_APP_GTM_ID:                 ${REACT_APP_GTM_ID}
+      #         docker:
+      #           web: Dockerfile
+      #       " >> heroku.yml
+      #       git config --global user.email "washmix@example.com"
+      #       git config --global user.name "Washmix"
+      #       git commit -a -m "Add build ARGs"
+      #       git push --force https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git ${CIRCLE_BRANCH}:master
+      #     no_output_timeout: 30m
+
+jobs:
+  "Deploy to Heroku":
+    <<: *build_environment
+    steps: *deploy_to_heroku
+
+# // End of jobs
+
+_release-filters: &release-filters
+  branches:
+    only:
+      - master
+      - heroku-test
+
+workflows:
+  deploy-to-heroku:
+    jobs:
+      - "Deploy to Heroku":
+          filters:
+            <<: *release-filters

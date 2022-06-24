@@ -1,0 +1,136 @@
+@import '../../scss/site-variables';
+
+
+
+.hero_content {
+  @media (min-width: $screen-sm) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+}
+
+.hero_block {
+
+  @media (min-width: 1024px) {
+    width: 60%;
+
+  }
+  @media (min-width: 1440px) {
+    width: 60%;
+  }
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+    @media (max-width: $screen-sm) {
+   align-items: center;
+  }
+
+}
+
+.hero_title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 48px;
+    @media (max-width: $screen-sm) {
+   text-align: center;
+  }
+  @media (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
+}
+
+.hero_subtitle {
+  margin: 0 0 32px;
+  margin-top: 2%;
+  color: #39B6ED;
+      font-size: xx-large;
+  font-weight: bold;
+  line-height: 24px;
+  @media (max-width: $screen-sm) {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    line-height: 28px;
+  }
+}
+
+.hero_info {
+  margin: 0 0 32px;
+  color: #00345950;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+    @media (max-width: $screen-sm) {
+   text-align: center;
+  }
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.hero_bangs{
+  display: flex;
+  flex-direction: row;
+    @media (max-width: $screen-sm) {
+  flex-direction: column;
+  }
+  margin: 0 0 32px;
+  color: #00345980;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+
+}
+
+.hero_onebang{
+    margin-right: 20px;
+    text-decoration: line-through;
+      @media (max-width: $screen-sm) {
+   text-align: center;
+  }
+}
+
+
+.hero_button {
+  display: flex;
+  justify-content: center;
+  @media (min-width: $screen-sm) {
+    display: inline-flex;
+  }
+}
+
+.hero_image {
+  display: block;
+  width: 186px;
+  // max-height: 50%;
+
+  margin: 0 auto 32px;
+  @media (min-width: $screen-sm) {
+    width: 224px;
+    order: 1;
+    margin: 0 60px 0 0;
+  }
+  @media (min-width: 1024px) {
+    width: 350px;
+    margin-right: 0;
+  }
+  @media (min-width: 1440px) {
+    width: 350px;
+  }
+}
+
+.downContainer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,213 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 37px;
+  border: 3px solid transparent;
+  background-color: #FFFFFF;
+  border-radius: 1.875rem;
+  color: #003459;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
+
+.button:hover {
+  color: #003459;
+  text-decoration: none;
+}
+
+.button:not(:disabled):focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: 0;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+a.button.disabled,
+fieldset:disabled a.button {
+  pointer-events: none;
+}
+
+.button_loading {
+  color: transparent !important;
+}
+.button_loading::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  animation: loadingAnimation 720ms steps(8, start) infinite reverse;
+  background-image: url("./loading.svg");
+  background-size: cover;
+  border-radius: 100%;
+  color: #FFFFFF;
+  content: "";
+}
+
+@-webkit-keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.button > svg {
+  flex-shrink: 0;
+  margin-left: 10px;
+  font-size: 19px;
+  vertical-align: text-top;
+}
+
+.button_primary {
+  border: 3px solid #1395CD;
+  background-color: #39B6ED;
+  color: #FFFFFF;
+}
+
+.button_primary:hover {
+  background-color: #74CBF2;
+  color: #FFFFFF;
+}
+
+.button_primary:not(:disabled):active {
+  background-color: #1395CD;
+  color: #FFFFFF;
+}
+
+.button_primary_outline {
+  border-color: #39B6ED;
+}
+.button_primary_outline.button_loading::before {
+  background-image: url("loading_blue.svg");
+}
+
+.button_primary_outline:hover {
+  background-color: #E2F8FF;
+}
+
+.button_primary_outline:not(:disabled):active {
+  background-color: #C4ECFE;
+}
+
+.button_accent {
+  border: 3px solid #1DAE43;
+  background-color: #2EC35F;
+  color: #FFFFFF;
+}
+
+.button_accent:hover {
+  background-color: #6AD57E;
+  color: #FFFFFF;
+}
+
+.button_accent:not(:disabled):active {
+  background-color: #1DAE43;
+  color: #FFFFFF;
+}
+
+.button_outline_accent {
+  border-color: #2EC35F;
+  color: #2EC35F;
+}
+.button_outline_accent.button_loading::before {
+  background-image: url("loading_green.svg");
+}
+
+.button_outline_accent:hover {
+  background-color: #DAFDDD;
+  color: #2EC35F;
+}
+
+.button_outline_accent:not(:disabled):active {
+  background-color: #C4F0C9;
+}
+
+.button_small {
+  padding: 7px 40px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: initial;
+  text-transform: none;
+}
+
+.button_medium {
+  padding: 10px 32px;
+  letter-spacing: 2.29px;
+}
+
+.button_block {
+  display: block;
+  width: 100%;
+}
+
+.button_icon {
+  position: relative;
+  display: inline-flex;
+  width: 76px;
+  height: 76px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 33px;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .button_icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 23px;
+  }
+}
+.button_icon > svg {
+  margin-left: 0;
+  font-size: 25px;
+}
+@media (max-width: 767px) {
+  .button_icon > svg {
+    font-size: 18px;
+  }
+}
+.button_icon::after {
+  position: absolute;
+  top: 87px;
+  right: 0;
+  left: 0;
+  color: #003459;
+  content: attr(title);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+@media (max-width: 767px) {
+  .button_icon::after {
+    top: 77px;
+  }
+}/*# sourceMappingURL=Button.module.css.map */

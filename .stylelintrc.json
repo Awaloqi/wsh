@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-idiomatic-order",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "max-nesting-depth": null,
+    "order/properties-alphabetical-order": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "scss/at-import-no-partial-leading-underscore": null,
+    "scss/at-mixin-pattern": null,
+    "selector-class-pattern": null,
+    "selector-max-compound-selectors": null,
+    "selector-max-id": null,
+    "selector-no-qualifying-type": null
+  }
+}

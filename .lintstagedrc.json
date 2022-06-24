@@ -1,0 +1,5 @@
+{
+  "*.?(s)css": "npm run lint:css",
+  "*.{js,jsx,ts,tsx}": "npm run lint:js",
+  "package.json": "prettier --write"
+}

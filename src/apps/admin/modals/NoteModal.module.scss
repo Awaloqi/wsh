@@ -1,0 +1,39 @@
+.modal {
+  width: 320px;
+  height: 568px;
+  padding: 56px 16px 16px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  font-size: 48px;
+  transition: transform 0.1s linear;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.modal__body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.modal__title {
+  margin-bottom: 16px;
+}
+
+.modal__actions {
+  display: flex;
+  margin-top: auto;
+  gap: 16px;
+}
+
+.modal__services {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}

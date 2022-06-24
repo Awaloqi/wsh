@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="hamburger-menu" width="19.699" height="17.908" viewBox="0 0 19.699 17.908">
+    <defs>
+        <style>
+            .cls-1{fill:#0c5b7e}
+        </style>
+    </defs>
+    <path id="Path_21133" d="M5.625 6.75h19.7v1.791h-19.7z" class="cls-1" transform="translate(-5.625 -6.75)"/>
+    <path id="Path_21134" d="M5.625 16.875h19.7v1.791h-19.7z" class="cls-1" transform="translate(-5.625 -8.816)"/>
+    <path id="Path_21135" d="M5.625 27h19.7v1.791h-19.7z" class="cls-1" transform="translate(-5.625 -10.883)"/>
+</svg>

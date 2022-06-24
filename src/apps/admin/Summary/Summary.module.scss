@@ -1,0 +1,79 @@
+@import '../../../scss/site-variables';
+
+.summary {
+  margin-bottom: 24px;
+}
+
+.summary__list {
+  padding: 16px;
+  border: solid 1px $grey300;
+  background-color: $white;
+  @media (min-width: 768px) {
+    padding: 0 0 16px;
+    border: 0;
+    border-bottom: solid 1px $grey300;
+    margin-bottom: 16px;
+  }
+}
+
+.summary__item {
+  display: flex;
+  align-items: flex-start;
+  &:not(:last-child) {
+    padding: 0 0 16px;
+    border-bottom: 1px solid $grey300;
+    margin-bottom: 16px;
+  }
+}
+
+.summary__delete {
+  padding: 0;
+  border: 0;
+  margin-right: 10px;
+  appearance: none;
+  background-color: transparent;
+  color: $primary500;
+  font-size: 24px;
+}
+
+.summary__position {
+  flex-basis: 100%;
+}
+
+.summary__itemName {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary__services {
+  padding-left: 16px;
+}
+
+.summary__total {
+  padding: 16px 16px 24px;
+  border: solid 1px $grey300;
+  background-color: $white;
+  @media (min-width: 768px) {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.summary__totalItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.summary__totalSum {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.summary__actions {
+  display: flex;
+  margin: 16px 0;
+  gap: 16px;
+}

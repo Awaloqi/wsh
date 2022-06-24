@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px 16px;
+  border: solid 1px #EEEEEE;
+  background-color: #FFFFFF;
+}
+
+.item__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.item__caption {
+  padding-bottom: 24px;
+  margin: 0 0 auto;
+}
+
+.item__input {
+  margin-bottom: 8px;
+}/*# sourceMappingURL=Item.module.css.map */

@@ -1,0 +1,29 @@
+@import '../../scss/site-variables';
+
+.invoice {
+  background-color: $grey100;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 254px;
+  }
+}
+
+.invoice__left,
+.invoice__right {
+  padding: 16px;
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
+}
+
+.invoice__right {
+  background-color: $white;
+}
+
+.description {
+  margin-bottom: 4px;
+
+  *:first-child {
+    margin-right: 8px;
+  }
+}

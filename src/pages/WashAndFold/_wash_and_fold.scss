@@ -1,0 +1,307 @@
+@import '../../scss/site-variables';
+
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.full-width-container {
+  width: 100%;
+  background-color: $primary100;
+}
+
+.wash-fold-container {
+  background-color: $primary100;
+  h1 {
+    color: $primary500;
+    font-size: 32px;
+    font-weight: bold;
+    @media (min-width: 1024px) {
+      font-size: 50px;
+    }
+  }
+  .text-container {
+    padding: 20px 0;
+    @media (min-width: 1024px) {
+      padding: 20px 10%;
+    }
+  }
+  .less-text {
+    font-size: 20px;
+    line-height: 20px;
+    @media (min-width: 1024px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  .small-text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    @media (min-width: 1024px) {
+      margin-top: 50px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .image-container {
+    padding: 20px 10px;
+    padding-top: 0;
+    @media (min-width: 1024px) {
+      padding: 50px 20px;
+    }
+  }
+}
+
+.how-it-works {
+  margin-top: 80px;
+  @media (min-width: 1024px) {
+    margin-top: 140px;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 26px;
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+  .count {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $primary500;
+    border-radius: 20px;
+    color: $primary500;
+  }
+  .heading-main {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    @media (min-width: 1024px) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+  .small-text {
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+  img {
+    max-width: 80%;
+    object-fit: contain;
+  }
+}
+
+.need_help {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  @media (min-width: 1024px) {
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+}
+
+.faq-block {
+  padding: 0 15px;
+  margin-top: 120px;
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.help-block {
+  margin-top: 50px;
+  color: $primary900;
+  .first-part {
+    font-weight: bold;
+    @media (min-width: 1024px) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.vs-block {
+  padding: 50px 0;
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 26px;
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+  .description {
+    padding-bottom: 10px;
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+  }
+  img {
+    width: 80%;
+    object-fit: contain;
+    @media (max-width: 1023px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.big-bag-block {
+  padding: 50px 0;
+  h2 {
+    border-bottom: 2px solid;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    @media (min-width: 1024px) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    @media (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.big-need-block {
+  padding: 50px 0;
+  h2 {
+    border-bottom: 2px solid;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    @media (min-width: 1024px) {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    @media (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+.color-text {
+  color: #39b6ed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+.bag_container {
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #003459;
+  background: #fff;
+  border-radius: 8px;
+  img {
+    min-width: 30%;
+  }
+}
+.result_container {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #003459;
+  border-radius: 20px;
+}
+.price_container {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #003459;
+  border-radius: 20px;
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .price_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+    div {
+      width: 70px;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}
+.bag_txt_one {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.bag_txt_two {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.calculator_heading {
+  font-size: 18px;
+  line-height: 18px;
+  @media (min-width: 1024px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+.calculator_value {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.heading_main {
+  max-width: 80%;
+  text-align: center;
+  @media (min-width: 1024px) {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+.disclaimer-text {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  @media (min-width: 1024px) {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+}
+
+.payrange_container_ {
+  height: 120px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #003459;
+  background: #fff;
+  border-radius: 10px;
+  @media (min-width: 1024px) {
+    height: 200px;
+  }
+}

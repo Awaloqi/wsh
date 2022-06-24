@@ -1,0 +1,125 @@
+@import '../../scss/site-variables';
+
+.upcoming {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: $grey100;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.upcoming_order {
+  display: flex;
+  min-width: 64%;
+  height: 400px;
+  flex-direction: column;
+  padding: 31px 28px 80px;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 $shadow-color;
+
+  @media (max-width: 767px) {
+    min-width: 100%;
+    height: 440px;
+    padding: 20px 16px 130px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  & + & {
+    margin-top: 40px;
+    @media (max-width: 767px) {
+      margin-top: 12px;
+    }
+  }
+}
+
+.upcoming_order___isEmpty {
+  --border-bottom: 44.8%;
+  --border-top: 45.6%;
+  height: 500px;
+  align-items: center;
+  padding: 35px;
+  background-image: url('../../assets/pickup-truck.svg'),
+    linear-gradient(
+      0deg,
+      $white 0%,
+      $white var(--border-bottom),
+      $primary900 var(--border-bottom),
+      $primary900 var(--border-top),
+      $primary300 var(--border-top),
+      $primary300 100%
+    );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 196px, 100%;
+
+  @media (max-width: 767px) {
+    --border-bottom: 43%;
+    --border-top: 43.7%;
+    height: 484px;
+    background-position-y: 54%;
+    background-size: 157px, 100%;
+  }
+}
+
+.upcoming_order___isLoading {
+  display: grid;
+  padding: 35px;
+  place-items: center;
+}
+
+.header {
+  margin: 0 0 20px;
+}
+
+.upcoming_description {
+  max-width: 450px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.upcoming_item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 21px;
+  margin-bottom: 26px;
+  &::after {
+    position: absolute;
+    right: 12px;
+    bottom: 0;
+    left: 12px;
+    border-bottom: 1px solid $grey300;
+    content: '';
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    &::after {
+      content: none;
+    }
+    &:last-of-type {
+      padding-bottom: 20px;
+      margin-bottom: 16px;
+      &::after {
+        right: 0;
+        left: 0;
+        content: '' !important;
+      }
+    }
+  }
+}
+
+.upcoming_reschedule {
+  @media (min-width: 768px) {
+    align-self: center;
+  }
+}

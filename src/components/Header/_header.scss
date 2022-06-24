@@ -1,0 +1,174 @@
+.navbar {
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  height: 116px;
+  min-height: 116px;
+  flex-grow: 0;
+  align-content: center;
+  align-items: center;
+  border: 0;
+  background-color: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  @media (max-width: $screen-sm) {
+    height: 84px;
+    min-height: 84px;
+  }
+
+  .container {
+    margin-top: -5px;
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
+  }
+
+  .navbar-collapse {
+    @media (max-width: $screen-sm-max) {
+      position: absolute;
+      z-index: 99999;
+      right: 0;
+      left: 0;
+      overflow: visible;
+      width: 100%;
+      min-height: 450px;
+      padding-top: 50px;
+      padding-left: 10px;
+      margin: 0 !important;
+      background-color: $white;
+    }
+    @media (max-width: $screen-xs) {
+      padding-left: 10px;
+    }
+  }
+
+  .navbar-brand {
+    padding: 0;
+    @media (max-width: $screen-xs) {
+      padding-left: 15px;
+    }
+  }
+
+  .navbar-right {
+    margin-right: -30px;
+  }
+
+  .navbar-left {
+    margin-top: -3px;
+    margin-left: 50px;
+  }
+
+  .header-btn {
+    margin-top: 9px;
+    margin-right: -30px;
+  }
+
+  .navbar-nav {
+    li {
+      margin-top: 8px;
+      margin-right: 20px;
+
+      &.list-item-left {
+        margin-top: 6px;
+        margin-right: 30px;
+        line-height: 35px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > a {
+        display: inline-block;
+        padding: 8px;
+        color: $body-color;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+
+        &::before {
+          display: block;
+          overflow: hidden;
+          height: 0;
+          content: attr(title);
+          font-weight: bold;
+          visibility: hidden;
+        }
+
+        &.button {
+          color: $primary500;
+        }
+        @media (max-width: $screen-xs) {
+          padding-top: 15px;
+          padding-bottom: 0;
+        }
+
+        &.button {
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+
+        &.registration {
+          @media (max-width: $screen-sm) {
+            color: $accent500;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          font-weight: bold;
+        }
+
+        &.active {
+          border-bottom: solid 2px;
+          font-weight: bold;
+        }
+      }
+
+      &.active a {
+        border-bottom: solid 2px;
+        background-color: transparent;
+        font-weight: bold;
+      }
+    }
+    @media (max-width: $screen-md-max) {
+      margin: 0;
+
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  @media (max-width: $screen-xs) {
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+
+  .icon-bar {
+    background-color: $primary900;
+    transition: all 0.2s;
+  }
+
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 50%;
+  }
+
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 50%;
+  }
+
+  &.collapsed {
+    .top-bar {
+      transform: rotate(0);
+    }
+
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+}

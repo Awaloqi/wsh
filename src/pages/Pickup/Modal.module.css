@@ -1,0 +1,11 @@
+.modal {
+  display: block;
+}
+
+.modal__title {
+  margin: 0 0 14px;
+}
+
+.modal__submit {
+  margin-top: 36px;
+}/*# sourceMappingURL=Modal.module.css.map */

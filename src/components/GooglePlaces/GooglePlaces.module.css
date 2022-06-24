@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input {
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.button {
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .input {
+    margin-bottom: 20px;
+  }
+}

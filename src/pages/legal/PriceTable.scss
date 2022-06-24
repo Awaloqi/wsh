@@ -1,0 +1,43 @@
+@import '../../scss/site-variables';
+
+.price-table {
+  display: grid;
+  box-shadow: inset 0 0 0 1px $grey400;
+  grid-template-columns: repeat(2, 1fr);
+  @media (min-width: $screen-sm) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (min-width: $screen-md) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.price-table__header {
+  background-color: $grey300;
+  font-weight: 500;
+  @media (max-width: 767px) {
+    &:nth-child(n + 3) {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    display: block;
+    &:nth-child(n + 5) {
+      display: none;
+    }
+  }
+}
+
+.price-table__cell,
+.price-table__header {
+  padding: 8px 4px;
+  border-right: 1px solid $grey400;
+  border-bottom: 1px solid $grey400;
+}
+.table-header {
+  padding: 8px 4px;
+  border: 1px solid $grey400;
+  border-bottom: 0;
+  background-color: $grey300;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+.driver {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.driver___login {
+  align-items: center;
+}
+
+.driver__container {
+  max-width: 375px;
+  flex-basis: 100%;
+  padding: 8px;
+}
+
+.driver__title {
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+@import '../../../scss/site-variables';
+
+.allItems {
+  .allItems__button {
+    width: max-content;
+    flex-grow: 1;
+  }
+}
+
+.allItems__buttons {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.allItems__list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+}

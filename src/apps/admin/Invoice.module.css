@@ -1,0 +1,31 @@
+.invoice {
+  background-color: #FAFAFA;
+}
+@media (min-width: 768px) {
+  .invoice {
+    display: grid;
+    grid-template-columns: 1fr 254px;
+  }
+}
+
+.invoice__left,
+.invoice__right {
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .invoice__left,
+.invoice__right {
+    padding: 24px;
+  }
+}
+
+.invoice__right {
+  background-color: #FFFFFF;
+}
+
+.description {
+  margin-bottom: 4px;
+}
+.description *:first-child {
+  margin-right: 8px;
+}/*# sourceMappingURL=Invoice.module.css.map */

@@ -1,0 +1,100 @@
+@import '../../scss/site-variables';
+
+li > .li_heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+li > .li_para {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.google_places_area {
+  background: #e2f8ff;
+}
+
+.left_section li::marker {
+  font-size: 33px;
+}
+
+.right_section li::marker {
+  color: #2ec35f;
+  font-size: 33px;
+}
+
+.right_section {
+  border-bottom: 1px solid $primary900;
+  @media (min-width: 1024px) {
+    border-bottom: 0;
+    border-left: 2px solid $primary900;
+  }
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 10px;
+  @media (min-width: 1024px) {
+    margin-bottom: 50px;
+  }
+}
+
+.full-width-container {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: $primary100;
+  @media (min-width: 1024px) {
+    margin-bottom: 50px;
+  }
+}
+
+.lets-take {
+  color: $primary500;
+}
+
+.see-how-big {
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.custom-slider {
+  width: 60%;
+}
+
+.heading_big_large {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  @media (min-width: 1024px) {
+    width: 100%;
+    // max-width: 900px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+.washmix_program_heading {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  @media (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+.advantage_heading {
+  font-size: 20px;
+  line-height: 20px;
+  @media (min-width: 1024px) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.green-color-custom {
+  color: #2ec35f;
+}

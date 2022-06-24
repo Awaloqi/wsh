@@ -1,0 +1,3 @@
+{{ define "common.container.env" }}
+# Global
+{{ end }}

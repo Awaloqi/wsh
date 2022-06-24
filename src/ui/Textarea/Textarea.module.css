@@ -1,0 +1,98 @@
+.textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  color: #003459;
+  font-size: 16px;
+}
+
+.textarea_error {
+  color: #ED3939;
+}
+
+.textarea__field {
+  padding: 15px 32px 15px 17px;
+  border: 1px solid #E0E0E0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: none;
+  font-weight: 400;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.textarea__label {
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  max-width: 100%;
+  padding: 0 5px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.textarea__field_error {
+  border-color: #ED3939;
+}
+
+.textarea__field_success {
+  border-color: #2EC35F;
+}
+
+.textarea__field:focus {
+  border-color: #39B6ED;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  outline: 0;
+}
+
+.textarea__errorMessage {
+  color: #ED3939;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.textarea__oval {
+  position: absolute;
+  top: 0;
+  right: 24px;
+  bottom: 0;
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: auto 0;
+  background-color: #39B6ED;
+  border-radius: 100%;
+}
+
+.textarea__loading {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  animation: loadingAnimation 720ms steps(8, start) infinite reverse;
+  background-image: url("../../assets/loading.svg");
+  background-size: cover;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.textarea__oval_error {
+  background-color: #ED3939;
+}/*# sourceMappingURL=Textarea.module.css.map */

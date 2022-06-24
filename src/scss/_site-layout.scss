@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  .page-container {
+    position: relative;
+    z-index: -2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+
+.container {
+  @media (min-width: $screen-sm) {
+    max-width: 715px;
+    width: 100%;
+  }
+  @media (min-width: $screen-md) {
+    max-width: 960px;
+    width: 100%;
+  }
+  @media (min-width: $screen-lg) {
+    max-width: 1200px;
+    width: 100%;
+  }
+}

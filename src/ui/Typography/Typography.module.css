@@ -1,0 +1,134 @@
+/* Blocks */
+.h1 {
+  color: #003459;
+  font-size: 50px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.4;
+}
+
+.h2 {
+  color: #003459;
+  font-size: 26px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.38;
+}
+
+.h3 {
+  color: #003459;
+  font-size: 24px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.33;
+}
+
+.h4 {
+  margin: 0 0 20px;
+  color: #003459;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.4;
+}
+
+.title {
+  color: #003459;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.56;
+}
+
+.body {
+  color: #003459;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+.body2 {
+  color: #003459;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.71;
+}
+
+.caption {
+  color: #003459;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  line-height: 2;
+}
+
+.small {
+  color: #003459;
+  font-size: 10px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.2;
+}
+
+/* Weight */
+.light {
+  font-weight: 300;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semiBold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Style */
+.italic {
+  font-style: italic;
+}
+
+/* Color */
+.grey {
+  color: #BDBDBD;
+}
+
+.darkGrey {
+  color: #757575;
+}
+
+.red {
+  color: #ED3939;
+}
+
+.green {
+  color: #2EC35F;
+}
+
+.white {
+  color: #FFFFFF;
+}/*# sourceMappingURL=Typography.module.css.map */

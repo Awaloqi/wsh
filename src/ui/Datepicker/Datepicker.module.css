@@ -1,0 +1,81 @@
+:global .DateRangePicker {
+  z-index: 999;
+}
+:global .DateInput {
+  display: none;
+}
+:global .SingleDatePickerInput__withBorder {
+  display: block;
+}
+:global .CalendarDay__selected,
+:global .CalendarDay__selected:active,
+:global .CalendarDay__selected:hover {
+  background-color: #39B6ED;
+  border-radius: 50%;
+}
+:global .DayPickerKeyboardShortcuts_show__bottomRight::before {
+  display: none;
+  border-right: 33px solid #39B6ED;
+}
+:global .CalendarDay__default {
+  border: 0;
+}
+
+.pickupdropoff {
+  margin-top: 3%;
+}
+
+.label {
+  display: block;
+  color: #003459;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #e0e0e0;
+  background: transparent;
+  border-radius: 5px;
+  color: #003459;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+}
+.button:focus {
+  border-color: #39B6ED;
+  color: #212121;
+}
+
+.button___error {
+  border-color: #ED3939;
+}
+
+.icon {
+  overflow: visible !important;
+  padding-top: 8px;
+  margin: 0 8px;
+  font-size: 24px;
+}
+
+.datepicker_input {
+  position: absolute;
+  top: 0;
+}
+
+.caret {
+  border-width: 5px;
+  margin: 14px 5px 0 20px;
+  color: #003459;
+  float: right;
+}
+
+.datepicker__errorMessage {
+  color: #ED3939;
+  font-size: 12px;
+  line-height: 15px;
+}/*# sourceMappingURL=Datepicker.module.css.map */

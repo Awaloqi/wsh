@@ -1,0 +1,133 @@
+.site-footer {
+  position: relative;
+  z-index: -2;
+  background-color: $white;
+  box-shadow: 0 -1px 1px 0 $shadow-color;
+  color: $footer-text-color;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+
+  .footer-top {
+    padding-top: 47px;
+    padding-bottom: 30px;
+
+    ul > li {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > a {
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+
+        .icon {
+          margin-right: 5px;
+          font-size: 22px;
+          vertical-align: middle;
+        }
+
+        &:hover,
+        &:focus {
+          color: $body-color;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
+
+    @media (max-width: $screen-xs) {
+      padding-top: 23px;
+      padding-bottom: 49px;
+    }
+  }
+
+  .footer-logo {
+    @media (min-width: $screen-sm) {
+      padding-left: 0;
+    }
+  }
+
+  .links {
+    a {
+      display: block;
+    }
+  }
+
+  .footer-widgets {
+    .contact-info {
+      white-space: nowrap;
+    }
+    @media (min-width: $screen-md) {
+      .col-1- {
+        padding-right: 5%;
+        padding-left: 0;
+      }
+
+      .col-2- {
+        padding-right: 0;
+        padding-left: 13%;
+      }
+
+      .col-3- {
+        padding-right: 0;
+        padding-left: 16.5%;
+      }
+    }
+    @media (min-width: $screen-sm) and (max-width: $screen-md-max) {
+      .col-1-,
+      .col-2-,
+      .col-3- {
+        max-width: 345px;
+        padding: 0;
+      }
+
+      .col-1-,
+      .col-2- {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: $screen-xs) {
+      .col-1- {
+        padding-top: 22px;
+      }
+
+      .col-1-,
+      .col-2- {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.footer-badges {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+  @media screen and (max-width: $screen-xs) {
+    flex-direction: column !important;
+    align-items: start;
+  }
+}
+
+.footer-badges > img {
+  margin-right: 20px;
+}
+.footer-copyright {
+  min-height: 40px;
+  background-color: $primary500;
+  line-height: 40px;
+  vertical-align: middle;
+
+  p {
+    padding: 0 10px;
+    margin: 0;
+    color: $white;
+    font-size: $size-12;
+    line-height: inherit;
+  }
+}

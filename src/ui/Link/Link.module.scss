@@ -1,0 +1,31 @@
+@import '../../scss/site-variables';
+
+.link {
+  padding: 0;
+  border: 0;
+  appearance: none;
+  background: none;
+  color: $primary500;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.71;
+  text-decoration: underline;
+  &:hover,
+  &:active {
+    color: $primary600;
+  }
+  &:focus {
+  outline: 0;
+}
+}
+
+.link__accent {
+  color: $accent500;
+  &:hover,
+  &:active {
+    color: $accent600
+  }
+}

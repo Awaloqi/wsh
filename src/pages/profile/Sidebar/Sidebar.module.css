@@ -1,0 +1,124 @@
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1023px) {
+  .sidebar___isOpen::before {
+    position: fixed;
+    z-index: 1;
+    top: 156px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    background-color: rgba(33, 33, 33, 0.7529411765);
+    content: "";
+  }
+}
+
+.sidebar__button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.sidebar__button > svg {
+  margin: 0 8px;
+  font-size: 24px;
+}
+.sidebar__button > svg:first-child {
+  color: #39B6ED;
+}
+@media (min-width: 1024px) {
+  .sidebar__button {
+    display: none;
+  }
+}
+
+.sidebar__button___isOpen > svg:last-child {
+  transform: rotate(180deg);
+}
+
+.sidebar__wrapper {
+  padding: 28px 16px 16px;
+}
+@media (max-width: 1023px) {
+  .sidebar__wrapper {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    padding: 12px 28px 20px;
+    background-color: #FFFFFF;
+  }
+}
+
+@media (max-width: 1023px) {
+  .sidebar__wrapper___hidden {
+    display: none;
+  }
+}
+
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #EEEEEE;
+  margin-bottom: 12px;
+}
+
+.sidebar__link {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: #757575;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.51px;
+  line-height: 2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sidebar__link > svg {
+  margin-right: 12px;
+  color: #BDBDBD;
+  font-size: 24px;
+}
+.sidebar__link:global(.active), .sidebar__link:hover {
+  color: #003459;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sidebar__link:global(.active) > svg, .sidebar__link:hover > svg {
+  color: #39B6ED;
+}
+
+.sidebar__info {
+  color: #39B6ED;
+  font-size: 10px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.2;
+}/*# sourceMappingURL=Sidebar.module.css.map */

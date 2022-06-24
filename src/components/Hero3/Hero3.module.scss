@@ -1,0 +1,140 @@
+@import '../../scss/site-variables';
+
+.hero {
+  padding: 32px 16px;
+  background-color:  $primary100;
+
+}
+
+.hero_content {
+  @media (min-width: $screen-sm) {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+.hero_block {
+ 
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+  
+  @media (min-width: 1440px) {
+    width: 50%;
+  }
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  
+
+}
+
+.hero_title {
+  margin: 0 0 32px;
+  font-size: 36px;
+
+  font-weight: bold;
+  line-height: 48px;
+    @media (max-width: $screen-sm) {
+          text-align: center;
+
+  }
+  @media (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
+}
+
+.hero_subtitle {
+  margin: 0 0 32px;
+  color: #39B6ED;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  @media (min-width: 1024px) {
+    font-size: xx-large;
+    line-height: 28px;
+  }
+      @media (max-width: $screen-sm) {
+          text-align: center;
+
+  }
+}
+
+.hero_info {
+  margin: 0 0 32px;
+  color: #00345950;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+      @media (max-width: $screen-sm) {
+          text-align: center;
+
+  }
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.hero_button {
+  display: flex;
+  justify-content: center;
+  @media (min-width: $screen-sm) {
+    display: inline-flex;
+  }
+}
+
+.hero_image {
+  height: 40%;
+    @media (max-width: $screen-sm) {
+    height: 30%;
+  }
+
+ 
+}
+
+.image_tagline {
+    @media (max-width: $screen-sm) {
+    font-size: 15px;
+  }
+
+ 
+}
+
+.single_image_container{
+    display: flex;
+  width: 28%;
+      @media (max-width: $screen-sm) {
+  width: 40%;
+
+  }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  margin: 1%;
+ background-color: $white;
+ border-radius: 16px;
+  text-align: center;
+}
+.grid_container{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+
+}
+.image_grid{
+  display: flex;
+      @media (max-width: $screen-sm) {
+  justify-content: center;
+
+  }
+  flex-direction: row;
+  flex-wrap: wrap;
+}

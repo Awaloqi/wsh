@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.css",
+    "main.js": "/static/js/main.js",
+    "main.js.map": "/static/js/main.js.map",
+    "index.html": "/index.html",
+    "static/css/main.be503e0c.css.map": "/static/css/main.be503e0c.css.map",
+    "static/css/main.css.map": "/static/css/main.css.map",
+    "static/js/main.js.LICENSE.txt": "/static/js/main.js.LICENSE.txt",
+    "static/media/Checkbox.module.scss": "/static/media/checkmark.bbfba0c8.svg",
+    "static/media/Button.module.scss": "/static/media/loading_green.4f6bced3.svg",
+    "static/media/Textarea.module.scss": "/static/media/loading.be574cf0.svg"
+  },
+  "entrypoints": [
+    "static/css/main.be503e0c.css",
+    "static/css/main.css",
+    "static/js/main.js"
+  ]
+}

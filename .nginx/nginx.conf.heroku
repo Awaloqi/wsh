@@ -1,0 +1,60 @@
+worker_processes 4;
+
+events { worker_connections 1024; }
+
+http {
+    server {
+        ###Edited for use in Heroku
+        listen ${PORT} default_server;
+        ###
+        include /etc/nginx/mime.types;
+
+        large_client_header_buffers 4 16k;
+
+        if ($http_x_forwarded_proto = 'http' ) {
+          return 301 https://$host$request_uri;
+        }
+
+        location /admin-static {
+            alias /usr/share/nginx/html/admin-build/;
+            try_files $uri /admin-static/index.html;
+        }
+
+        location /driver {
+            alias /usr/share/nginx/html/driver-build/;
+            try_files $uri /driver/index.html;
+        }
+
+        location /storybook {
+            alias /usr/share/nginx/html/customer-build/storybook/;
+            try_files $uri /storybook/index.html;
+        }
+
+        location / {
+            alias /usr/share/nginx/html/customer-build/;
+            try_files $uri $uri/index.html /index.html;
+        }
+
+        ###Edited for use in Heroku
+        location /openapi {
+            proxy_pass https://washmix-back.herokuapp.com;
+        }
+        location /admin {
+            proxy_pass https://washmix-back.herokuapp.com;
+        }
+        location /api {
+            proxy_pass https://washmix-back.herokuapp.com;
+        }
+        location /pos {
+            proxy_pass https://washmix-back.herokuapp.com;
+        }
+        location /media {
+            proxy_pass https://washmix-back.herokuapp.com;
+        }
+        location /assets {
+            proxy_pass https://washmix-back.herokuapp.com;
+        }
+    }
+}
+
+daemon off;

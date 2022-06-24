@@ -1,0 +1,66 @@
+@import '../../scss/site-variables';
+
+.header {
+  margin: 0;
+}
+
+.pickup {
+  padding: 50px 0;
+  background-color: $grey100;
+  @media (max-width: $screen-xs) {
+    padding: 0;
+  }
+}
+
+  .hideOnMobile{
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+.pickup_box {
+  max-width: 436px;
+  padding: 33px 40px;
+  margin: auto;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 $shadow-color;
+  @media (max-width: $screen-xs) {
+    padding: 16px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.pickup_header {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.pickup_header_2 {
+  margin: 0;
+  margin-bottom: 20px;
+  color:$site-red;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.pickup_action {
+  margin: 12px 0 16px;
+}
+
+.pickup_edit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pickup_icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.pickup_confirm {
+  margin: 40px 0 0;
+}

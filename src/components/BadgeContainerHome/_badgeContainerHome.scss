@@ -1,0 +1,34 @@
+.badge-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 10%;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.badge{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+    
+        
+    }
+}
+
+.badgeimage{
+    height: 100px;
+}
+.subtag{
+    color: #8c8c8c80;
+    font-size: small;
+}

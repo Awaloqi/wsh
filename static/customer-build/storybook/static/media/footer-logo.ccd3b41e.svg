@@ -1,0 +1,9 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <circle stroke="#BDBDBD" stroke-width="2" cx="24" cy="24" r="23"/>
+        <rect fill="#39B6ED" opacity=".50254755" transform="scale(-1 1) rotate(-20 0 210.05166283)" x="30.2490798" y="14.0895286" width="4.8" height="21.6" rx="2.4"/>
+        <rect fill="#39B6ED" opacity=".50254755" transform="rotate(-20 26.88908 24.889529)" x="24.4890798" y="14.0895286" width="4.8" height="21.6" rx="2.4"/>
+        <path d="M9.41999984 15.56169673c2.49109394-.90668404 5.24553722.37773395 6.15222127 2.8688279l4.92509006 13.53157373c.45334202 1.24554697-.18886698 2.62276861-1.43441395 3.07611064-1.24554697.45334202-2.6227686-.18886698-3.07611063-1.43441395L9.41999984 15.56169673z" fill="#39B6ED" opacity=".50254755"/>
+        <rect fill="#39B6ED" opacity=".50254755" transform="scale(-1 1) rotate(-20 0 144.71849627)" x="18.7290798" y="14.0895286" width="4.8" height="21.6" rx="2.4"/>
+    </g>
+</svg>

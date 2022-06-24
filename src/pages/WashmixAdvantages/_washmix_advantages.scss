@@ -1,0 +1,352 @@
+@import '../../scss/site-variables';
+
+@media (min-width: 320px) {
+  .heading_small {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .paragraph_main {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .paragraph_main_ {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .paragraph_main::before {
+    display: inline-block;
+    padding-right: 6px;
+    color: #2ec35f;
+    content: '\2713';
+    font-size: 28px;
+  }
+  .paragraph_sub_main {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .color_container {
+    padding: 10px 20px;
+    background: #d7f0fb;
+    border-radius: 30px;
+  }
+  .washmix_advantage_heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .question_heading_main {
+    color: #39b6ed;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .card_container {
+    min-width: 100%;
+    min-height: 210px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 2.5px 5px 80px rgba(57, 182, 237, 0.25);
+  }
+  .card_heading {
+    color: #39b6ed;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .card_txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading_small {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .paragraph_main {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .paragraph_main_ {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .paragraph_main::before {
+    display: inline-block;
+    padding-right: 6px;
+    color: #2ec35f;
+    content: '\2713';
+    font-size: 28px;
+  }
+  .paragraph_sub_main {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .color_container {
+    padding: 27px 30px 20px;
+    background: #d7f0fb;
+    border-radius: 30px;
+  }
+
+  .washmix_advantage_heading {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .question_heading_main {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 55px;
+  }
+  .question_heading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .question_heading_two {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  .question_btn_container {
+    width: 185px;
+    min-height: 48px;
+    box-sizing: border-box;
+    border: 2px solid #39b6ed;
+    background: #fff;
+    border-radius: 30px;
+  }
+  li > .li_heading {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  li > .li_para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .card_container {
+    min-width: 100%;
+    min-height: 210px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 2.5px 5px 80px rgba(57, 182, 237, 0.25);
+  }
+  .card_heading {
+    color: #39b6ed;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .card_txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+.google_places_area {
+  background: #e2f8ff;
+}
+
+.left_section li::marker {
+  font-size: 33px;
+}
+
+.right_section li::marker {
+  color: #2ec35f;
+  font-size: 33px;
+}
+
+.right_section {
+  @media (min-width: 1024px) {
+    border-left: 2px solid $primary900;
+  }
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 10px;
+  @media (min-width: 1024px) {
+    margin-bottom: 50px;
+  }
+}
+
+.full-width-container {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: $primary100;
+  @media (min-width: 1024px) {
+    margin-bottom: 50px;
+  }
+}
+
+.heading_calculator {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 55px;
+}
+.calculator_container {
+  h1 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    @media (min-width: 1024px) {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+  // p {
+  //   color: #39b6ed;
+  //   font-size: 20px;
+  //   font-weight: 500;
+  //   line-height: 20px;
+  //   @media (min-width: 1024px) {
+  //     font-size: 26px;
+  //     line-height: 26px;
+  //   }
+  // }
+  .payrange_container {
+    height: 90px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #003459;
+    background: #fff;
+    border-radius: 10px;
+    @media (min-width: 1024px) {
+      height: 150px;
+    }
+  }
+  .calculator_btn {
+    box-sizing: border-box;
+    border: 1px solid #003459;
+    background: #2ec35f;
+    border-radius: 10px;
+    @media (min-width: 1024px) {
+      border-radius: 20px;
+    }
+  }
+  // .calculator_botm_txt {
+  //   font-size: 14px;
+  //   line-height: 26px;
+  //   @media (min-width: 1024px) {
+  //     font-size: 14px;
+  //     line-height: 26px;
+  //   }
+  // }
+}
+
+.disclaimer-text {
+  max-width: 1000px;
+  padding: 30px 12px 0;
+  color: $primary900;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.lets-take {
+  color: $primary500;
+}
+
+.see-how-big {
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.custom-slider {
+  width: 60%;
+}
+.wash_fold_para {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  @media (min-width: 1024px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+.span_tag {
+  margin-bottom: 10px;
+  color: #2ec35f;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+.washmix_program_heading {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  @media (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+.washmix_advantage_heading {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+  @media (min-width: 1024px) {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+.washmix_advantage_heading {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  @media (min-width: 1024px) {
+    min-height: 60px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
+
+.heading_medium {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  @media (min-width: 1024px) {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+
+.checkService {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  margin: 2% 0%;
+  background-color: #e2f8ff;
+  gap: 1rem;
+  @media screen and (max-width: $screen-sm) {
+    flex-direction: column;
+  }
+}

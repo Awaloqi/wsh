@@ -1,0 +1,10 @@
+export const SERVICE_RADIUS = 15; // 15 miles
+export const INACTIVE_EXPIRY_TIME = 60; // in minutes
+export const STORE_LOCATION = { lat: 37.390071, lng: -122.081281 };
+export const API_URL = process.env.REACT_APP_API_URL || '/api';
+export const FACEBOOK_APP_ID = process.env.REACT_APP_FACEBOOK_APP_ID;
+export const GOOGLE_CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+export const STRIPE_PUBLIC_KEY = process.env.REACT_APP_STRIPE_PUBLIC_KEY || '';
+export const GOOGLE_PLACES_API_KEY = process.env.REACT_APP_GOOGLE_PLACES_API_KEY || '';
+export const SENTRY_DSN = process.env.REACT_APP_SENTRY_DSN;
+export const POS_DISCOUNT_PASSWORDS = process.env.REACT_APP_POS_DISCOUNT_PASSWORDS || '';

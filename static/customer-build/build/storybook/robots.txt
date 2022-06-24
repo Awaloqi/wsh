@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /order
+Disallow: /driver
+Disallow: /pickup
+Disallow: /profile
+Disallow: /upcoming

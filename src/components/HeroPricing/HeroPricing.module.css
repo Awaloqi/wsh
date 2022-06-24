@@ -1,0 +1,156 @@
+@media (min-width: 768px) {
+  .hero_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero_block {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+@media (min-width: 1024px) {
+  .hero_block {
+    width: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .hero_block {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .hero_block {
+    align-items: center;
+  }
+}
+
+.hero_title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 48px;
+}
+@media (max-width: 768px) {
+  .hero_title {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero_title {
+    margin-bottom: 40px;
+  }
+}
+
+.hero_subtitle {
+  margin: 0 0 32px;
+  margin-top: 2%;
+  color: #39B6ED;
+  font-size: xx-large;
+  font-weight: bold;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .hero_subtitle {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_subtitle {
+    line-height: 28px;
+  }
+}
+
+.hero_info {
+  margin: 0 0 32px;
+  color: rgba(0, 52, 89, 0.3137254902);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .hero_info {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_info {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.hero_bangs {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 32px;
+  color: rgba(0, 52, 89, 0.5019607843);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .hero_bangs {
+    flex-direction: column;
+  }
+}
+
+.hero_onebang {
+  margin-right: 20px;
+  text-decoration: line-through;
+}
+@media (max-width: 768px) {
+  .hero_onebang {
+    text-align: center;
+  }
+}
+
+.hero_button {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .hero_button {
+    display: inline-flex;
+  }
+}
+
+.hero_image {
+  display: block;
+  width: 186px;
+  margin: 0 auto 32px;
+}
+@media (min-width: 768px) {
+  .hero_image {
+    width: 224px;
+    order: 1;
+    margin: 0 60px 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_image {
+    width: 350px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .hero_image {
+    width: 350px;
+  }
+}
+
+.downContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=HeroPricing.module.css.map */

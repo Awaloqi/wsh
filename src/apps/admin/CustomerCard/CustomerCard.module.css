@@ -1,0 +1,10 @@
+.customer {
+  margin-bottom: 24px;
+}
+
+.description {
+  margin-bottom: 4px;
+}
+.description *:first-child {
+  margin-right: 8px;
+}/*# sourceMappingURL=CustomerCard.module.css.map */

@@ -1,0 +1,3145 @@
+swagger: '2.0'
+info:
+  title: WashMix
+  description: WashMix REST API
+  version: v1.0
+host: washmix.evrone.app
+schemes:
+  - http
+basePath: /api
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    name: Authorization
+    in: header
+paths:
+  /client/addresses/:
+    get:
+      operationId: client_addresses_list
+      description: Methods to manipulate with `Address` entity
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Address'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    post:
+      operationId: client_addresses_create
+      description: Methods to manipulate with `Address` entity
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Address'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Address'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/addresses/{id}/:
+    get:
+      operationId: client_addresses_read
+      description: Methods to manipulate with `Address` entity
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Address'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    put:
+      operationId: client_addresses_update
+      description: Methods to manipulate with `Address` entity
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Address'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Address'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    patch:
+      operationId: client_addresses_partial_update
+      description: Methods to manipulate with `Address` entity
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Address'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Address'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    delete:
+      operationId: client_addresses_delete
+      description: Methods to manipulate with `Address` entity
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /client/auth/forgot_password/:
+    post:
+      operationId: client_auth_reset_password
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/SendEmailReset'
+      responses:
+        '201':
+          description: ''
+      tags:
+        - client
+    parameters: []
+  /client/auth/login/:
+    post:
+      operationId: client_auth_login_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/TokenObtainSliding'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/LoginResponse'
+      tags:
+        - client
+    parameters: []
+  /client/auth/reset_new_password/:
+    post:
+      operationId: client_auth_reset_password_confirm
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/PasswordResetConfirm'
+      responses:
+        '201':
+          description: ''
+      tags:
+        - client
+    parameters: []
+  /client/auth/signup/:
+    post:
+      operationId: client_auth_signup_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Signup'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Signup'
+      tags:
+        - client
+    parameters: []
+  /client/billing/create_intent/:
+    post:
+      operationId: client_billing_create_intent_create
+      description: |-
+        Used in following cases:
+            - When client add a new card
+            - When client pass through a welcome scenario
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/CreateIntent'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/CreateIntentResponse'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/billing/stripe_webhook/:
+    post:
+      operationId: client_billing_stripe_webhook_create
+      description: View that responds on Stripe's webhooks.
+      parameters: []
+      responses:
+        '201':
+          description: ''
+      tags:
+        - client
+    parameters: []
+  /client/cards/:
+    get:
+      operationId: client_cards_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Card'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    post:
+      operationId: client_cards_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Card'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Card'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/cards/refresh/:
+    post:
+      operationId: client_cards_refresh_create
+      description: ''
+      parameters: []
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Card'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/cards/{id}/:
+    get:
+      operationId: client_cards_read
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Card'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    put:
+      operationId: client_cards_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Card'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Card'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    patch:
+      operationId: client_cards_partial_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Card'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Card'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    delete:
+      operationId: client_cards_delete
+      description: ''
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /client/customers/:
+    post:
+      operationId: client_customers_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Customer'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Customer'
+      tags:
+        - client
+    parameters: []
+  /client/invoices/:
+    get:
+      operationId: client_invoices_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Invoice'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/jwt/refresh/:
+    post:
+      operationId: client_jwt_refresh_create
+      description: |-
+        Takes a sliding JSON web token and returns a new, refreshed version if the
+        token's refresh period has not expired.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/TokenRefreshSliding'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/TokenRefreshSliding'
+      tags:
+        - client
+    parameters: []
+  /client/jwt/verify/:
+    post:
+      operationId: client_jwt_verify_create
+      description: |-
+        Takes a token and indicates if it is valid.  This view provides no
+        information about a token's fitness for a particular use.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/TokenVerify'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/TokenVerify'
+      tags:
+        - client
+    parameters: []
+  /client/locations/:
+    get:
+      operationId: client_locations_list
+      summary: PUBLIC METHOD.
+      description: |-
+        Retrieve a list of cities where we work and list of
+        valid zip codes that we support.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Location'
+      tags:
+        - client
+    parameters: []
+  /client/orders/:
+    get:
+      operationId: client_orders_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Order'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/orders/apply_coupon/:
+    post:
+      operationId: client_orders_apply_coupon_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/OrderApplyCoupon'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/OrderApplyCouponResponse'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/orders/remove_coupon/:
+    post:
+      operationId: client_orders_remove_coupon_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/OrderRemoveCoupon'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/OrderApplyCouponResponse'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/packages/:
+    get:
+      operationId: client_packages_list
+      summary: PUBLIC METHOD.
+      description: |-
+        Shows a list of available packages.
+        Mostly called from landing without authentication.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Package'
+      tags:
+        - client
+    parameters: []
+  /client/phones/:
+    get:
+      operationId: client_phones_list
+      description: Methods to manipulate with `Address` entity.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Phone'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    post:
+      operationId: client_phones_create
+      description: Methods to manipulate with `Address` entity.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Phone'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Phone'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/phones/{id}/:
+    get:
+      operationId: client_phones_read
+      description: Methods to manipulate with `Address` entity.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Phone'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    put:
+      operationId: client_phones_update
+      description: Methods to manipulate with `Address` entity.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Phone'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Phone'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    patch:
+      operationId: client_phones_partial_update
+      description: Methods to manipulate with `Address` entity.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Phone'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Phone'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    delete:
+      operationId: client_phones_delete
+      description: Methods to manipulate with `Address` entity.
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /client/profile/:
+    get:
+      operationId: client_profile_read
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Profile'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    put:
+      operationId: client_profile_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Profile'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Profile'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    patch:
+      operationId: client_profile_partial_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Profile'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Profile'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/requests/:
+    get:
+      operationId: client_requests_list
+      description: ''
+      parameters:
+        - name: is_upcoming
+          in: query
+          description: ''
+          required: false
+          type: string
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Request'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    post:
+      operationId: client_requests_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Request'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Request'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/requests/check/:
+    post:
+      operationId: client_requests_check_create
+      description: Goal of this view - validate request pickup date and time.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/RequestCheck'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/RequestCheck'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/requests/{id}/:
+    get:
+      operationId: client_requests_read
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Request'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    put:
+      operationId: client_requests_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Request'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Request'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    patch:
+      operationId: client_requests_partial_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Request'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Request'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    delete:
+      operationId: client_requests_delete
+      description: ''
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /client/schedules/:
+    get:
+      operationId: client_schedules_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Schedule'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    post:
+      operationId: client_schedules_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Schedule'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Schedule'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/schedules/{id}/:
+    get:
+      operationId: client_schedules_read
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Schedule'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    put:
+      operationId: client_schedules_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Schedule'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Schedule'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    patch:
+      operationId: client_schedules_partial_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Schedule'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Schedule'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    delete:
+      operationId: client_schedules_delete
+      description: ''
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /client/services/:
+    get:
+      operationId: client_services_list
+      summary: PUBLIC METHOD.
+      description: Retrieve a list of services for items with prices.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Service'
+      tags:
+        - client
+    parameters: []
+  /client/sms/delivery/:
+    post:
+      operationId: client_sms_delivery_create
+      description: |-
+        Twilio `Make HTTP Request` widget status logic:
+        - 200 or 204 (success)
+        - 3xx (redirect)
+        - 4xx or 5xx (fail)
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/TwilioFlexDeliveryWebhook'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/TwilioFlexDeliveryWebhook'
+      tags:
+        - client
+    parameters: []
+  /client/sms/online_workers/:
+    post:
+      operationId: client_sms_online_workers_create
+      description: |-
+        Twilio `Make HTTP Request` widget status logic:
+        - 200 or 204 (success)
+        - 3xx (redirect)
+        - 4xx or 5xx (fail)
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/TwilioFlexOnlineWorkersWebhook'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/TwilioFlexOnlineWorkersWebhook'
+      tags:
+        - client
+    parameters: []
+  /client/subscription/checkout/:
+    post:
+      operationId: client_subscription_checkout_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/SubscriptionCheckout'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/SubscriptionChooseResponse'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/subscription/choose/:
+    post:
+      operationId: client_subscription_choose_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/SubscriptionChoose'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/SubscriptionChooseResponse'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/welcome/checkout/:
+    post:
+      operationId: client_welcome_checkout_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/WelcomeCheckout'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/WelcomeCheckoutResponse'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /client/zip_codes/:
+    get:
+      operationId: client_zip_codes_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ZipCode'
+      tags:
+        - client
+      security:
+        - Bearer: []
+    parameters: []
+  /driver/auth/login/:
+    post:
+      operationId: driver_auth_login_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/TokenObtainSliding'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/LoginResponse'
+      tags:
+        - driver
+    parameters: []
+  /driver/deliveries/:
+    get:
+      operationId: driver_deliveries_list
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Delivery'
+      tags:
+        - driver
+      security:
+        - Bearer: []
+    post:
+      operationId: driver_deliveries_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Delivery'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Delivery'
+      tags:
+        - driver
+      security:
+        - Bearer: []
+    parameters: []
+  /driver/deliveries/{id}/:
+    get:
+      operationId: driver_deliveries_read
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Delivery'
+      tags:
+        - driver
+      security:
+        - Bearer: []
+    put:
+      operationId: driver_deliveries_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Delivery'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Delivery'
+      tags:
+        - driver
+      security:
+        - Bearer: []
+    patch:
+      operationId: driver_deliveries_partial_update
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Delivery'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Delivery'
+      tags:
+        - driver
+      security:
+        - Bearer: []
+    delete:
+      operationId: driver_deliveries_delete
+      description: ''
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+        - driver
+      security:
+        - Bearer: []
+    parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+  /health/:
+    get:
+      operationId: health_list
+      summary: PUBLIC METHOD.
+      description: |-
+        View that shows our API is working.
+        Also, via this view we are checking that
+        dramatiq worker is working.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Health'
+      tags:
+        - health
+    parameters: []
+  /pos/basket/:
+    get:
+      operationId: pos_basket_list
+      description: Method allows to see which items inside basket.
+      parameters:
+        - name: order
+          in: query
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Order'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/basket/change_item/:
+    post:
+      operationId: pos_basket_change_item_create
+      description: |-
+        Method allows to:
+            - Add items to basket
+            - Remove items from basket
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSBasketChangeItem'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Order'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/basket/clear/:
+    post:
+      operationId: pos_basket_clear_create
+      description: Method removes all items from basket.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSBasketClear'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/POSBasketClear'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/basket/set_extra_items/:
+    post:
+      operationId: pos_basket_set_extra_items_create
+      description: Method gives ability to add or remove some extra items to basket.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSBasketSetExtraItems'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Order'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/coupons/:
+    get:
+      operationId: pos_coupons_list
+      description: Method to retrieve all coupons in POS.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/POSCoupon'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/items/:
+    get:
+      operationId: pos_items_list
+      description: Method to retrieve all items in POS.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/POSItem'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/orders/already_formed/:
+    get:
+      operationId: pos_orders_already_formed_list
+      description: |-
+        Method that checks order is already formed by employee and
+        paid by client. If order is formed - we show a link to the order in admin.
+        If not - we show a button `CREATE ORDER` with redirect to POS.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/POSOrderAlreadyFormedResponse'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/orders/apply_coupon/:
+    post:
+      operationId: pos_orders_apply_coupon_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSOrderApplyCoupon'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/OrderApplyCouponResponse'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/orders/checkout/:
+    post:
+      operationId: pos_orders_checkout_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSOrderCheckout'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Order'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/orders/prepare/:
+    post:
+      operationId: pos_orders_prepare_create
+      description: |-
+        Method that prepares order - tries to find order with
+        existing basket and request.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSOrderPrepare'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/POSOrderPrepareResponse'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/orders/remove_coupon/:
+    post:
+      operationId: pos_orders_remove_coupon_create
+      description: ''
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSOrderRemoveCoupon'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/OrderApplyCouponResponse'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/orders/{id}/:
+    put:
+      operationId: pos_orders_update
+      description: |-
+        Method for order update.
+        In most cases it used to change `note`.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Order'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Order'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    patch:
+      operationId: pos_orders_partial_update
+      description: |-
+        Method for order update.
+        In most cases it used to change `note`.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Order'
+      responses:
+        '200':
+          description: ''
+          schema:
+            $ref: '#/definitions/Order'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters:
+      - name: id
+        in: path
+        description: A unique integer value identifying this order.
+        required: true
+        type: integer
+  /pos/requests/update/:
+    post:
+      operationId: pos_requests_update_create
+      description: Method gives ability to update request info in POS.
+      parameters:
+        - name: data
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/POSRequestUpdate'
+      responses:
+        '201':
+          description: ''
+          schema:
+            $ref: '#/definitions/Order'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+  /pos/services/:
+    get:
+      operationId: pos_services_list
+      description: Method to retrieve all services with items in POS.
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/POSService'
+      tags:
+        - pos
+      security:
+        - Bearer: []
+    parameters: []
+definitions:
+  Address:
+    required:
+      - zip_code
+      - title
+      - address_line_1
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      zip_code:
+        title: Zip code
+        type: string
+      created:
+        title: Creation date and time
+        type: string
+        format: date-time
+        readOnly: true
+      changed:
+        title: Last changed date and time
+        type: string
+        format: date-time
+        readOnly: true
+      title:
+        title: Title of address
+        type: string
+        maxLength: 80
+        minLength: 1
+      address_line_1:
+        title: Address line 1
+        type: string
+        maxLength: 250
+        minLength: 1
+      address_line_2:
+        title: Address line 2
+        type: string
+        maxLength: 250
+      instructions:
+        title: Delivery instructions
+        type: string
+      has_doorman:
+        title: Is doorman at this address
+        type: boolean
+  SendEmailReset:
+    required:
+      - email
+    type: object
+    properties:
+      email:
+        title: Email
+        type: string
+        format: email
+        minLength: 1
+  EmptyResponse:
+    type: object
+    properties: {}
+  TokenObtainSliding:
+    required:
+      - email
+      - password
+    type: object
+    properties:
+      email:
+        title: Email
+        type: string
+        minLength: 1
+      password:
+        title: Password
+        type: string
+        minLength: 1
+  LoginResponse:
+    required:
+      - token
+    type: object
+    properties:
+      token:
+        title: Token
+        type: string
+        minLength: 1
+  PasswordResetConfirm:
+    required:
+      - uid
+      - token
+      - new_password
+    type: object
+    properties:
+      uid:
+        title: Uid
+        type: string
+        minLength: 1
+      token:
+        title: Token
+        type: string
+        minLength: 1
+      new_password:
+        title: New password
+        type: string
+        minLength: 1
+  Signup:
+    required:
+      - email
+      - password
+      - phone
+    type: object
+    properties:
+      email:
+        title: Email
+        type: string
+        format: email
+        minLength: 1
+      password:
+        title: Password
+        type: string
+        minLength: 1
+      phone:
+        title: Phone
+        type: string
+        minLength: 1
+  CreateIntent:
+    required:
+      - is_save_card
+    type: object
+    properties:
+      is_save_card:
+        title: Is save card
+        type: boolean
+      order:
+        title: Order
+        type: string
+  CreateIntentResponse:
+    required:
+      - public_key
+      - secret
+    type: object
+    properties:
+      public_key:
+        title: Public key
+        type: string
+        minLength: 1
+      secret:
+        title: Secret
+        type: string
+        minLength: 1
+  Card:
+    required:
+      - stripe_id
+      - last
+      - expiration_month
+      - expiration_year
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      stripe_id:
+        title: Stripe ID
+        type: string
+        maxLength: 100
+        x-nullable: true
+      last:
+        title: Last 4 digits
+        type: string
+        maxLength: 4
+        minLength: 1
+      expiration_month:
+        title: Expiration month
+        type: integer
+        maximum: 32767
+        minimum: 0
+      expiration_year:
+        title: Expiration year
+        type: integer
+        maximum: 32767
+        minimum: 0
+      is_active:
+        title: Card is active
+        type: boolean
+        readOnly: true
+  Customer:
+    type: object
+    properties:
+      email:
+        title: Email
+        type: string
+        format: email
+        maxLength: 254
+        x-nullable: true
+      phone:
+        title: Phone
+        type: string
+        maxLength: 20
+        x-nullable: true
+      full_name:
+        title: Full name
+        type: string
+        maxLength: 100
+      zip_code:
+        title: Zip code
+        type: string
+        maxLength: 20
+      address:
+        title: Address
+        type: string
+        maxLength: 250
+      kind:
+        title: Kind
+        type: string
+        enum:
+          - interested
+          - possible
+          - storage
+  Invoice:
+    required:
+      - order
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      card:
+        title: Card
+        type: integer
+        x-nullable: true
+      order:
+        title: Order
+        type: integer
+      purpose:
+        title: Purpose of this invoice
+        type: string
+        enum:
+          - credit
+          - subscription
+          - order
+          - one_time_payment
+      is_paid:
+        title: Is paid
+        type: string
+        readOnly: true
+      amount:
+        title: "Amount, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      discount:
+        title: "Discount, in cents (\xA2)"
+        type: number
+      dollar_discount:
+        title: Dollar discount
+        type: string
+        readOnly: true
+      amount_with_discount:
+        title: Amount with discount
+        type: string
+        readOnly: true
+      dollar_amount_with_discount:
+        title: Dollar amount with discount
+        type: string
+        readOnly: true
+  TokenRefreshSliding:
+    required:
+      - token
+    type: object
+    properties:
+      token:
+        title: Token
+        type: string
+        minLength: 1
+  TokenVerify:
+    required:
+      - token
+    type: object
+    properties:
+      token:
+        title: Token
+        type: string
+        minLength: 1
+  Location:
+    required:
+      - name
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      zip_code_list:
+        type: array
+        items:
+          type: string
+        readOnly: true
+        uniqueItems: true
+      name:
+        title: Name
+        type: string
+        maxLength: 50
+        minLength: 1
+  POSQuantity:
+    required:
+      - id
+      - count
+      - service
+      - item
+    type: object
+    properties:
+      id:
+        title: Id
+        type: integer
+      count:
+        title: Count of exact item
+        type: integer
+        maximum: 32767
+        minimum: 0
+      service:
+        title: Service
+        type: string
+        minLength: 1
+      item:
+        title: Item
+        type: string
+        minLength: 1
+      amount:
+        title: Amount
+        type: string
+        readOnly: true
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      discount:
+        title: Discount
+        type: string
+        readOnly: true
+      dollar_discount:
+        title: Dollar discount
+        type: string
+        readOnly: true
+      amount_with_discount:
+        title: Amount with discount
+        type: string
+        readOnly: true
+      dollar_amount_with_discount:
+        title: Dollar amount with discount
+        type: string
+        readOnly: true
+  POSExtraItem:
+    required:
+      - title
+      - amount
+    type: object
+    properties:
+      title:
+        title: Title
+        type: string
+        minLength: 1
+      amount:
+        title: Amount
+        type: integer
+      instructions:
+        title: Instructions
+        type: string
+        minLength: 1
+        x-nullable: true
+      dollar_amount:
+        title: Dollar amount
+        type: number
+        readOnly: true
+        x-nullable: true
+  Basket:
+    required:
+      - item_list
+      - extra_items
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      item_list:
+        type: array
+        items:
+          $ref: '#/definitions/POSQuantity'
+      amount:
+        title: Amount
+        type: string
+        readOnly: true
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      discount:
+        title: Discount
+        type: string
+        readOnly: true
+      dollar_discount:
+        title: Dollar discount
+        type: string
+        readOnly: true
+      amount_with_discount:
+        title: Amount with discount
+        type: string
+        readOnly: true
+      dollar_amount_with_discount:
+        title: Dollar amount with discount
+        type: string
+        readOnly: true
+      extra_items:
+        type: array
+        items:
+          $ref: '#/definitions/POSExtraItem'
+    x-nullable: true
+  RequestResponse:
+    required:
+      - address
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      address:
+        title: Address to pickup and dropoff
+        type: integer
+      pickup_date:
+        title: Pickup date
+        type: string
+        readOnly: true
+      pickup_start:
+        title: Pickup start
+        type: string
+        readOnly: true
+      pickup_end:
+        title: Pickup end
+        type: string
+        readOnly: true
+      dropoff_date:
+        title: Dropoff date
+        type: string
+        readOnly: true
+      dropoff_start:
+        title: Dropoff start
+        type: string
+        readOnly: true
+      dropoff_end:
+        title: Dropoff end
+        type: string
+        readOnly: true
+      is_rush:
+        title: Is a rush / urgent delivery
+        type: boolean
+      is_free:
+        title: Is free
+        type: boolean
+        readOnly: true
+      comment:
+        title: Comment
+        type: string
+      schedule:
+        title: Recurring schedule for request
+        type: integer
+        x-nullable: true
+      amount:
+        title: Amount
+        type: string
+        readOnly: true
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      discount:
+        title: Discount
+        type: string
+        readOnly: true
+      dollar_discount:
+        title: Dollar discount
+        type: string
+        readOnly: true
+      amount_with_discount:
+        title: Amount with discount
+        type: string
+        readOnly: true
+      dollar_amount_with_discount:
+        title: Dollar amount with discount
+        type: string
+        readOnly: true
+      rush_amount:
+        title: "Rush delivery price, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      dollar_rush_amount:
+        title: Dollar rush amount
+        type: string
+        readOnly: true
+      custom_amount:
+        title: "Custom delivery price, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      dollar_custom_amount:
+        title: Dollar custom amount
+        type: string
+        readOnly: true
+    x-nullable: true
+  Order:
+    required:
+      - basket
+      - request
+      - coupon
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      created:
+        title: Creation date and time
+        type: string
+        format: date-time
+        readOnly: true
+      basket:
+        $ref: '#/definitions/Basket'
+      request:
+        $ref: '#/definitions/RequestResponse'
+      subscription:
+        title: Subscription
+        type: string
+        readOnly: true
+        x-nullable: true
+      status:
+        title: Status of order
+        type: string
+        enum:
+          - accepted
+          - in_progress
+          - completed
+      pretty_status:
+        title: Pretty status
+        type: string
+        readOnly: true
+      note:
+        title: Note
+        type: string
+      is_save_card:
+        title: Should we save the card
+        type: boolean
+      credit_back:
+        title: Credit back
+        type: string
+        readOnly: true
+      dollar_credit_back:
+        title: Dollar credit back
+        type: string
+        readOnly: true
+      amount:
+        title: Amount
+        type: string
+        readOnly: true
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      discount:
+        title: Discount
+        type: string
+        readOnly: true
+      dollar_discount:
+        title: Dollar discount
+        type: string
+        readOnly: true
+      amount_with_discount:
+        title: Amount with discount
+        type: string
+        readOnly: true
+      dollar_amount_with_discount:
+        title: Dollar amount with discount
+        type: string
+        readOnly: true
+      coupon:
+        title: Coupon
+        type: string
+        x-nullable: true
+  OrderApplyCoupon:
+    required:
+      - coupon
+      - order
+    type: object
+    properties:
+      coupon:
+        title: Coupon
+        type: string
+      order:
+        title: Order
+        type: string
+  OrderApplyCouponResponse:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      subscription:
+        title: Subscription
+        type: string
+        readOnly: true
+      coupon:
+        title: Coupon
+        type: string
+        readOnly: true
+      amount:
+        title: Amount
+        type: string
+        readOnly: true
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      discount:
+        title: Discount
+        type: string
+        readOnly: true
+      dollar_discount:
+        title: Dollar discount
+        type: string
+        readOnly: true
+      amount_with_discount:
+        title: Amount with discount
+        type: string
+        readOnly: true
+      dollar_amount_with_discount:
+        title: Dollar amount with discount
+        type: string
+        readOnly: true
+  OrderRemoveCoupon:
+    required:
+      - order
+    type: object
+    properties:
+      order:
+        title: Order
+        type: string
+  Package:
+    required:
+      - dollar_price
+      - dry_clean
+      - laundry
+      - alterations
+      - wash_fold
+      - delivery_free_from
+      - has_delivery
+      - has_welcome_box
+      - has_seasonal_garment
+      - has_credit_back
+      - name
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      dollar_price:
+        title: Dollar price
+        type: number
+      price:
+        title: "Price, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      dry_clean:
+        title: Discount on dry clean + press
+        description: in percents
+        type: integer
+        maximum: 100
+        minimum: 1
+      laundry:
+        title: Discount on laundry + press
+        description: in percents
+        type: integer
+        maximum: 100
+        minimum: 1
+      alterations:
+        title: Alterations discount
+        description: in percents
+        type: integer
+        maximum: 100
+        minimum: 1
+      wash_fold:
+        title: Discount on wash & fold
+        description: in percents
+        type: integer
+        maximum: 100
+        minimum: 1
+      delivery_free_from:
+        title: Free delivery starts from
+        type: integer
+        maximum: 2147483647
+        minimum: -2147483648
+      has_delivery:
+        title: Has a free delivery
+        type: boolean
+      has_welcome_box:
+        title: Has a welcome box
+        type: boolean
+      has_seasonal_garment:
+        title: Has a seasonal garment storage
+        type: boolean
+      has_credit_back:
+        title: Has a credit back
+        type: boolean
+      is_most_popular:
+        title: Most popular badge
+        type: boolean
+      name:
+        title: Name
+        type: string
+        enum:
+          - payc
+          - gold
+          - platinum
+      description:
+        title: Description of package
+        type: string
+        maxLength: 100
+  Phone:
+    required:
+      - title
+      - number
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      title:
+        title: Title of phone
+        type: string
+        maxLength: 80
+        minLength: 1
+      number:
+        title: Number
+        type: string
+        maxLength: 20
+        minLength: 1
+  Profile:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      email:
+        title: Email
+        type: string
+        readOnly: true
+        minLength: 1
+      subscription:
+        title: Subscription
+        type: string
+        readOnly: true
+      first_name:
+        title: First name
+        type: string
+        minLength: 1
+      last_name:
+        title: Last name
+        type: string
+        minLength: 1
+      balance:
+        title: Balance
+        type: integer
+        readOnly: true
+      dollar_balance:
+        title: Dollar balance
+        type: number
+        readOnly: true
+      stripe_id:
+        title: Stripe ID
+        type: string
+        maxLength: 100
+        x-nullable: true
+      billing_address:
+        title: Billing address
+        type: object
+      starch:
+        title: Starch
+        type: string
+        enum:
+          - none
+          - light
+          - medium
+          - heavy
+      no_crease:
+        title: No crease
+        type: string
+        enum:
+          - all_pants
+          - jeans_only
+      fix_tears:
+        title: Fix tears, rips
+        type: boolean
+      detergents:
+        title: Detergents
+        type: string
+        enum:
+          - scented
+          - hypo_allergenic
+      fabric_softener:
+        title: Fabric softener
+        type: boolean
+      is_auto_billing:
+        title: Automatically bill subscription
+        type: boolean
+      main_card:
+        title: Main card
+        type: integer
+        x-nullable: true
+      main_phone:
+        title: Main phone number
+        type: integer
+        x-nullable: true
+      main_address:
+        title: Main address
+        type: integer
+        x-nullable: true
+  Request:
+    required:
+      - address
+      - pickup_date
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      address:
+        title: Address to pickup and dropoff
+        type: integer
+      pickup_date:
+        title: Pickup date
+        type: string
+      pickup_start:
+        title: Pickup start
+        type: string
+        readOnly: true
+      pickup_end:
+        title: Pickup end
+        type: string
+        readOnly: true
+      dropoff_date:
+        title: Dropoff date
+        type: string
+        readOnly: true
+      dropoff_start:
+        title: Dropoff start
+        type: string
+        readOnly: true
+      dropoff_end:
+        title: Dropoff end
+        type: string
+        readOnly: true
+      is_rush:
+        title: Is a rush / urgent delivery
+        type: boolean
+      comment:
+        title: Comment
+        type: string
+      schedule:
+        title: Recurring schedule for request
+        type: integer
+        readOnly: true
+  RequestCheck:
+    required:
+      - pickup_date
+      - pickup_start
+    type: object
+    properties:
+      pickup_date:
+        title: Pickup date
+        type: string
+      pickup_start:
+        title: Pickup start
+        type: string
+  Schedule:
+    required:
+      - days
+      - status
+      - address
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      created:
+        title: Creation date and time
+        type: string
+        format: date-time
+        readOnly: true
+      changed:
+        title: Last changed date and time
+        type: string
+        format: date-time
+        readOnly: true
+      comment:
+        title: Comment
+        type: string
+      is_rush:
+        title: Is a rush / urgent delivery
+        type: boolean
+      days:
+        type: array
+        items:
+          title: Day of week
+          type: integer
+          enum:
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+      status:
+        title: Status of schedule
+        type: string
+        enum:
+          - active
+          - paused
+      address:
+        title: Address to pickup and dropoff
+        type: integer
+  Price:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      amount:
+        title: "Amount, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      title:
+        title: Title
+        type: string
+        readOnly: true
+        minLength: 1
+      count:
+        title: Count of items
+        type: integer
+        maximum: 32767
+        minimum: 0
+      unit:
+        title: Unit of item
+        type: string
+        enum:
+          - pcs
+          - set
+          - lbs
+          - sq_ft
+          - bag
+          - pleat
+      pretty_unit:
+        title: Pretty unit
+        type: string
+        readOnly: true
+      image:
+        title: Image
+        type: string
+        readOnly: true
+        format: uri
+  Service:
+    required:
+      - title
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      item_list:
+        type: array
+        items:
+          $ref: '#/definitions/Price'
+        readOnly: true
+      title:
+        title: Title of service
+        type: string
+        maxLength: 200
+        minLength: 1
+      image:
+        title: Image
+        type: string
+        readOnly: true
+        format: uri
+  TwilioFlexDeliveryWebhook:
+    required:
+      - message
+      - phone
+    type: object
+    properties:
+      message:
+        title: Message
+        type: string
+        minLength: 1
+      phone:
+        title: Phone
+        type: string
+        minLength: 1
+  TwilioFlexOnlineWorkersWebhook:
+    required:
+      - sid
+    type: object
+    properties:
+      sid:
+        title: Sid
+        type: string
+        minLength: 1
+  SubscriptionCheckout:
+    required:
+      - order
+    type: object
+    properties:
+      order:
+        title: Order
+        type: string
+  SubscriptionChooseResponse:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      subscription:
+        title: Subscription
+        type: string
+        readOnly: true
+      amount:
+        title: Amount
+        type: string
+        readOnly: true
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      discount:
+        title: Discount
+        type: string
+        readOnly: true
+      dollar_discount:
+        title: Dollar discount
+        type: string
+        readOnly: true
+      amount_with_discount:
+        title: Amount with discount
+        type: string
+        readOnly: true
+      dollar_amount_with_discount:
+        title: Dollar amount with discount
+        type: string
+        readOnly: true
+  SubscriptionChoose:
+    required:
+      - package
+    type: object
+    properties:
+      package:
+        title: Package
+        type: string
+  WelcomeCheckoutUser:
+    required:
+      - first_name
+      - last_name
+      - is_auto_billing
+    type: object
+    properties:
+      first_name:
+        title: First name
+        type: string
+        maxLength: 50
+        minLength: 1
+      last_name:
+        title: Last name
+        type: string
+        maxLength: 100
+        minLength: 1
+      is_auto_billing:
+        title: Is auto billing
+        type: boolean
+  WelcomeCheckoutAddress:
+    required:
+      - zip_code
+      - address_line_1
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      zip_code:
+        title: Zip code
+        type: string
+      title:
+        title: Title
+        type: string
+        default: Main
+        minLength: 1
+      created:
+        title: Creation date and time
+        type: string
+        format: date-time
+        readOnly: true
+      changed:
+        title: Last changed date and time
+        type: string
+        format: date-time
+        readOnly: true
+      address_line_1:
+        title: Address line 1
+        type: string
+        maxLength: 250
+        minLength: 1
+      address_line_2:
+        title: Address line 2
+        type: string
+        maxLength: 250
+      instructions:
+        title: Delivery instructions
+        type: string
+      has_doorman:
+        title: Is doorman at this address
+        type: boolean
+  WelcomeCheckoutBillingAddress:
+    required:
+      - zip_code
+      - address_line_1
+    type: object
+    properties:
+      zip_code:
+        title: Zip code
+        type: string
+        maxLength: 10
+        minLength: 1
+      address_line_1:
+        title: Address line 1
+        type: string
+        maxLength: 250
+        minLength: 1
+      address_line_2:
+        title: Address line 2
+        type: string
+        maxLength: 250
+  WelcomeCheckout:
+    required:
+      - user
+      - address
+      - billing_address
+      - order
+    type: object
+    properties:
+      user:
+        $ref: '#/definitions/WelcomeCheckoutUser'
+      address:
+        $ref: '#/definitions/WelcomeCheckoutAddress'
+      billing_address:
+        $ref: '#/definitions/WelcomeCheckoutBillingAddress'
+      order:
+        title: Order
+        type: string
+  WelcomeCheckoutResponse:
+    required:
+      - user
+      - address
+      - billing_address
+    type: object
+    properties:
+      user:
+        $ref: '#/definitions/WelcomeCheckoutUser'
+      address:
+        $ref: '#/definitions/WelcomeCheckoutAddress'
+      billing_address:
+        $ref: '#/definitions/WelcomeCheckoutBillingAddress'
+  ZipCode:
+    required:
+      - value
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      value:
+        title: Value
+        type: string
+        maxLength: 20
+        minLength: 1
+  Client:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      main_phone:
+        title: Main phone
+        type: string
+        readOnly: true
+      first_name:
+        title: First name
+        type: string
+        readOnly: true
+      last_name:
+        title: Last name
+        type: string
+        readOnly: true
+  Delivery:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      note:
+        title: Note on delivery
+        type: string
+      order:
+        title: Order
+        type: string
+        readOnly: true
+      kind:
+        title: Kind of delivery
+        type: string
+        enum:
+          - pickup
+          - dropoff
+      status:
+        title: Current status
+        type: string
+        enum:
+          - cancelled
+          - accepted
+          - in_progress
+          - completed
+      date:
+        title: Date for delivery
+        type: string
+      start:
+        title: Start of delivery interval
+        type: string
+      end:
+        title: End of delivery interval
+        type: string
+      address:
+        $ref: '#/definitions/Address'
+      comment:
+        title: Comment
+        type: string
+        readOnly: true
+      is_rush:
+        title: Is rush
+        type: string
+        readOnly: true
+      sorting:
+        title: Sorting
+        type: integer
+        maximum: 32767
+        minimum: 0
+        x-nullable: true
+      client:
+        $ref: '#/definitions/Client'
+  Health:
+    required:
+      - status
+    type: object
+    properties:
+      status:
+        title: Status
+        type: string
+        minLength: 1
+  POSBasketChangeItem:
+    required:
+      - price
+      - count
+      - action
+      - order
+    type: object
+    properties:
+      price:
+        title: Price
+        type: integer
+      count:
+        title: Count
+        type: integer
+      action:
+        title: Action
+        type: string
+        enum:
+          - add
+          - remove
+      order:
+        title: Order
+        type: integer
+  POSBasketClear:
+    required:
+      - order
+    type: object
+    properties:
+      order:
+        title: Order
+        type: integer
+  POSBasketSetExtraItems:
+    required:
+      - extra_items
+      - order
+    type: object
+    properties:
+      extra_items:
+        type: array
+        items:
+          $ref: '#/definitions/POSExtraItem'
+      order:
+        title: Order
+        type: integer
+  POSCoupon:
+    required:
+      - code
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      code:
+        title: Code
+        type: string
+        maxLength: 30
+        minLength: 1
+      description:
+        title: Description or note for coupon
+        type: string
+        maxLength: 200
+  POSItemPrice:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      count:
+        title: Count of items
+        type: integer
+        maximum: 32767
+        minimum: 0
+      unit:
+        title: Unit of item
+        type: string
+        enum:
+          - pcs
+          - set
+          - lbs
+          - sq_ft
+          - bag
+          - pleat
+      pretty_unit:
+        title: Pretty unit
+        type: string
+        readOnly: true
+      amount:
+        title: "Amount, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      title:
+        title: Title
+        type: string
+        readOnly: true
+        minLength: 1
+      image:
+        title: Image
+        type: string
+        readOnly: true
+        format: uri
+  POSItem:
+    required:
+      - title
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      title:
+        title: Title of item
+        type: string
+        maxLength: 200
+        minLength: 1
+      image:
+        title: Image
+        type: string
+        readOnly: true
+        format: uri
+      price_list:
+        type: array
+        items:
+          $ref: '#/definitions/POSItemPrice'
+        readOnly: true
+  POSOrderAlreadyFormedResponse:
+    required:
+      - formed
+    type: object
+    properties:
+      formed:
+        title: Formed
+        type: boolean
+      order:
+        title: Order
+        type: string
+        readOnly: true
+        x-nullable: true
+  POSOrderApplyCoupon:
+    required:
+      - coupon
+      - order
+    type: object
+    properties:
+      coupon:
+        title: Coupon
+        type: string
+      order:
+        title: Order
+        type: integer
+  POSOrderCheckout:
+    required:
+      - order
+    type: object
+    properties:
+      order:
+        title: Order
+        type: integer
+  POSOrderPrepare:
+    required:
+      - client
+      - request
+    type: object
+    properties:
+      client:
+        title: Client
+        type: integer
+      request:
+        title: Request
+        type: integer
+  POSOrderPrepareClientResponse:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      email:
+        title: Email
+        type: string
+        readOnly: true
+      first_name:
+        title: First name
+        type: string
+        readOnly: true
+      last_name:
+        title: Last name
+        type: string
+        readOnly: true
+      balance:
+        title: Balance
+        type: string
+        readOnly: true
+      dollar_balance:
+        title: Dollar balance
+        type: string
+        readOnly: true
+      billing_address:
+        title: Billing address
+        type: object
+      pretty_billing_address:
+        title: Pretty billing address
+        type: string
+        readOnly: true
+      detergents:
+        title: Detergents
+        type: string
+        enum:
+          - scented
+          - hypo_allergenic
+      starch:
+        title: Starch
+        type: string
+        enum:
+          - none
+          - light
+          - medium
+          - heavy
+      no_crease:
+        title: No crease
+        type: string
+        enum:
+          - all_pants
+          - jeans_only
+      fabric_softener:
+        title: Fabric softener
+        type: boolean
+      fix_tears:
+        title: Fix tears, rips
+        type: boolean
+  POSOrderPrepareAddressResponse:
+    required:
+      - zip_code
+      - address_line_1
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      zip_code:
+        title: Zip code
+        type: integer
+      address_line_1:
+        title: Address line 1
+        type: string
+        maxLength: 250
+        minLength: 1
+      address_line_2:
+        title: Address line 2
+        type: string
+        maxLength: 250
+      has_doorman:
+        title: Is doorman at this address
+        type: boolean
+  POSOrderPrepareRequestResponse:
+    required:
+      - address
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      comment:
+        title: Comment
+        type: string
+      is_rush:
+        title: Is a rush / urgent delivery
+        type: boolean
+      address:
+        $ref: '#/definitions/POSOrderPrepareAddressResponse'
+  POSOrderPrepareResponse:
+    required:
+      - client
+      - request
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      client:
+        $ref: '#/definitions/POSOrderPrepareClientResponse'
+      request:
+        $ref: '#/definitions/POSOrderPrepareRequestResponse'
+  POSOrderRemoveCoupon:
+    required:
+      - order
+    type: object
+    properties:
+      order:
+        title: Order
+        type: integer
+  POSRequestUpdate:
+    required:
+      - order
+    type: object
+    properties:
+      order:
+        title: Order
+        type: integer
+      is_rush:
+        title: Is a rush / urgent delivery
+        type: boolean
+      rush_amount:
+        title: "Rush delivery price, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      is_custom:
+        title: Is a custom delivery price
+        type: boolean
+      custom_amount:
+        title: "Custom delivery price, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+  POSPrice:
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      amount:
+        title: "Amount, in cents (\xA2)"
+        type: integer
+        maximum: 9223372036854775807
+        minimum: -9223372036854775808
+      dollar_amount:
+        title: Dollar amount
+        type: string
+        readOnly: true
+      title:
+        title: Title
+        type: string
+        readOnly: true
+        minLength: 1
+      count:
+        title: Count of items
+        type: integer
+        maximum: 32767
+        minimum: 0
+      unit:
+        title: Unit of item
+        type: string
+        enum:
+          - pcs
+          - set
+          - lbs
+          - sq_ft
+          - bag
+          - pleat
+      pretty_unit:
+        title: Pretty unit
+        type: string
+        readOnly: true
+      image:
+        title: Image
+        type: string
+        readOnly: true
+        format: uri
+  POSService:
+    required:
+      - title
+    type: object
+    properties:
+      id:
+        title: ID
+        type: integer
+        readOnly: true
+      item_list:
+        type: array
+        items:
+          $ref: '#/definitions/POSPrice'
+        readOnly: true
+      title:
+        title: Title of service
+        type: string
+        maxLength: 200
+        minLength: 1
+      image:
+        title: Image
+        type: string
+        readOnly: true
+        format: uri

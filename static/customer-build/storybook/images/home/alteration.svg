@@ -1,0 +1,19 @@
+<svg width="96" height="96" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" xml:space="preserve">
+  <style>
+    .st1,.st2,.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;stroke:#003459}.st2,.st3{fill:#d8d8d8}.st3{fill:#fff;stroke-width:2}
+  </style>
+    <path id="Rectangle-3-Copy-2" fill="none" d="M0 0h96v96H0z"/>
+    <path id="Rectangle-13" class="st1" d="M40.5 18.5h2c.6 0 1 .4 1 1v2c0 .6-.4 1-1 1h-2c-.6 0-1-.4-1-1v-2c0-.6.4-1 1-1z"/>
+    <path id="Rectangle-14" class="st2" d="M39 18.5h5c.3 0 .5.2.5.5s-.2.5-.5.5h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5z"/>
+    <path id="Rectangle-14-Copy" class="st2" d="M39 22.5h5c.3 0 .5.2.5.5s-.2.5-.5.5h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5z"/>
+    <path id="Rectangle-11" class="st2" d="M27 47.5c.3 0 .5.2.5.5v3c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-3c0-.3.2-.5.5-.5z"/>
+    <path id="Rectangle-2-Copy" class="st3" d="M24 60c-2.2 0-4 1.8-4 4v4c0 2.2 1.8 4 4 4h48c2.2 0 4-1.8 4-4v-8H24z"/>
+    <path id="Rectangle-2" class="st3" d="M22 68h52c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2H22c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2z"/>
+    <path id="Rectangle-3" class="st3" d="M72 30h3c.6 0 1 .4 1 1v8c0 .6-.4 1-1 1h-3c-.6 0-1-.4-1-1v-8c0-.6.4-1 1-1z"/>
+    <path id="Path-2" class="st3" d="M75.8 58.8L72 39V29c0-2.2-1.8-4-4-4H28.5c-5.2 0-9.5 4.3-9.5 9.5V42c0 1.1.9 2 2 2h12.1c.6 0 1.1-.3 1.5-.7l4.2-4.9c.8-.9 1.9-1.4 3-1.4H52c1.1 0 2 .9 2 2v21h20.8c.6 0 1-.4 1-1v-.2z"/>
+    <path id="Rectangle-5" d="M44 29h6c1.1 0 2 .9 2 2h0c0 1.1-.9 2-2 2h-6c-1.1 0-2-.9-2-2h0c0-1.1.9-2 2-2z" fill="none" stroke="#003459" stroke-width="2"/>
+    <path id="Rectangle-10" class="st1" d="M24.5 44.5h4c.6 0 1 .4 1 1v1c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1z"/>
+    <circle id="Oval-2" class="st3" cx="64" cy="51" r="4"/>
+    <circle id="Oval-2-Copy" class="st3" cx="64" cy="36" r="2"/>
+    <path id="Rectangle-12" class="st2" d="M41.5 22.5h1v2h-1z"/>
+</svg>

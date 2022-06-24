@@ -1,0 +1,74 @@
+.button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 11px 8px;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #39B6ED;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  transition: background-color 0.15s ease-in-out;
+}
+.button:not(:disabled):hover {
+  background-color: #74CBF2;
+}
+.button:not(:disabled):active {
+  background-color: #1395CD;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.button___secondary {
+  border: 1px solid #E0E0E0;
+  background-color: #FFFFFF;
+  color: #003459;
+}
+.button___secondary:not(:disabled):hover {
+  background-color: #FAFAFA;
+}
+.button___secondary:not(:disabled):active {
+  background-color: #EEEEEE;
+}
+
+.button__label___loading {
+  opacity: 0;
+}
+
+.button__loading {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  animation: loadingAnimation 720ms steps(8, start) infinite reverse;
+  background-image: url("./loading.svg");
+  background-size: cover;
+  border-radius: 100%;
+  color: #FFFFFF;
+}
+
+@-webkit-keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=Button.module.css.map */

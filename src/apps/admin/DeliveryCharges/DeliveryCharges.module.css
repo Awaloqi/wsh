@@ -1,0 +1,23 @@
+.deliveryCharges {
+  margin-bottom: 24px;
+}
+
+.deliveryCharges__list {
+  padding: 16px;
+  border: solid 1px #EEEEEE;
+  background-color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .deliveryCharges__list {
+    padding: 0;
+    border: 0;
+  }
+}
+
+.deliveryCharges__item {
+  display: flex;
+  justify-content: space-between;
+}
+.deliveryCharges__item:not(:last-child) {
+  margin-bottom: 12px;
+}/*# sourceMappingURL=DeliveryCharges.module.css.map */

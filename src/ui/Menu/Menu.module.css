@@ -1,0 +1,70 @@
+.menu .menu__list {
+  padding: 8px 0;
+}
+.menu .menu__button {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border: 0;
+  background-color: #FFFFFF;
+  color: inherit;
+  line-height: 0;
+}
+.menu .menu__button:hover {
+  background-color: #EEEEEE;
+}
+.menu .menu__button:focus {
+  outline: none;
+}
+.menu .menu__icon {
+  font-size: 24px;
+  line-height: 1;
+}
+.menu .menu__icon___big {
+  font-size: 32px;
+}
+.menu .menu__item {
+  display: block;
+  padding: 0;
+}
+.menu .menu__item:hover, .menu .menu__item:focus, .menu .menu__item:active {
+  background-color: #EEEEEE;
+  color: #003459;
+}
+.menu .menu__link {
+  display: block;
+  padding: 11px 24px;
+  color: #003459;
+  font-size: 16px;
+  line-height: 1.5;
+  outline: 0;
+}
+.menu .menu__link:hover, .menu .menu__link:focus, .menu .menu__link:active {
+  color: #003459;
+  text-decoration: none;
+}
+.menu .menu__itemButton {
+  width: 100%;
+  padding: 11px 24px;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+.menu .menu__itemButton:focus {
+  outline: none;
+}
+.menu .menu__divider {
+  margin: 8px 0;
+  background-color: #EEEEEE;
+}
+.menu .menu__header {
+  padding: 11px 24px;
+  color: #003459;
+  font-size: inherit;
+  text-transform: none;
+}/*# sourceMappingURL=Menu.module.css.map */

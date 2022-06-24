@@ -1,0 +1,35 @@
+  .pannel {
+    width: 94%;
+    max-width: 800px;
+    padding: 35px 50px;
+    margin: 40px auto;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 $shadow-color;
+  }
+
+    .top_bodr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: $white;
+  }
+.slideButtonsContainer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+.slideButton{
+  width: 20px;
+  height: 20px;
+  background-color: $primary500;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background-color: $grey800;
+  }
+}

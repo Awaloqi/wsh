@@ -1,0 +1,35 @@
+@import '../../../scss/site-variables';
+
+.weightInput {
+  position: relative;
+}
+
+input.weightInput__input {
+  display: block;
+  width: 100%;
+  height: unset;
+  padding: 7px 14px;
+  border: 1px solid $grey400;
+  appearance: none;
+  background-color: $white;
+  border-radius: 5px;
+  color: $primary900;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.weightInput__measure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  border-left: 1px solid $grey400;
+  margin: 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}

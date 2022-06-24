@@ -1,0 +1,35 @@
+.weightInput {
+  position: relative;
+}
+
+input.weightInput__input {
+  display: block;
+  width: 100%;
+  height: unset;
+  padding: 7px 14px;
+  border: 1px solid #E0E0E0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  color: #003459;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.weightInput__measure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  border-left: 1px solid #E0E0E0;
+  margin: 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}/*# sourceMappingURL=WeightInput.module.css.map */

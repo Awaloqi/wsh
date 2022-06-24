@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.09b846e5.chunk.css",
+    "main.js": "/static/js/main.c27bde44.chunk.js",
+    "main.js.map": "/static/js/main.c27bde44.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6a80c700.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6a80c700.js.map",
+    "static/css/2.92e084ae.chunk.css": "/static/css/2.92e084ae.chunk.css",
+    "static/js/2.b07c8535.chunk.js": "/static/js/2.b07c8535.chunk.js",
+    "static/js/2.b07c8535.chunk.js.map": "/static/js/2.b07c8535.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.92e084ae.chunk.css.map": "/static/css/2.92e084ae.chunk.css.map",
+    "static/css/main.09b846e5.chunk.css.map": "/static/css/main.09b846e5.chunk.css.map",
+    "static/js/2.b07c8535.chunk.js.LICENSE.txt": "/static/js/2.b07c8535.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/unit.5a2b16a8.svg",
+    "static/media/Checkbox.module.scss": "/static/media/checkmark.bbfba0c8.svg",
+    "static/media/Button.module.scss": "/static/media/loading_green.4f6bced3.svg",
+    "static/media/Textarea.module.scss": "/static/media/loading.be574cf0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a80c700.js",
+    "static/css/2.92e084ae.chunk.css",
+    "static/js/2.b07c8535.chunk.js",
+    "static/css/main.09b846e5.chunk.css",
+    "static/js/main.c27bde44.chunk.js"
+  ]
+}

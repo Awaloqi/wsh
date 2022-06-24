@@ -1,0 +1,105 @@
+.profile {
+  padding: 40px 32px 80px;
+  background-color: #FAFAFA;
+}
+@media (max-width: 1023px) {
+  .profile {
+    padding: 0 0 80px;
+  }
+}
+
+.profile__wrapper {
+  display: flex;
+  max-width: 1200px;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .profile__wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.profile__sidebar {
+  width: 178px;
+  flex-shrink: 0;
+  margin-right: 28px;
+}
+@media (max-width: 1023px) {
+  .profile__sidebar {
+    width: unset;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  position: absolute;
+  z-index: 1;
+  bottom: 90%;
+  width: 260px;
+  padding: 8px;
+  margin-bottom: -20px;
+  margin-left: 150px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #2ec35f;
+  font-size: small;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 40%;
+  left: -1%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent;
+  margin-left: -5px;
+  content: "";
+  transform: rotate(90deg);
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  visibility: visible;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Profile.module.css.map */

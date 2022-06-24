@@ -1,0 +1,51 @@
+.container {
+  background-color: #FAFAFA;
+}
+
+.bg {
+  --border-bottom: 17.7%;
+  --border-top: 18.6%;
+  height: 429px;
+  margin-top: -116px;
+  background-image: url("../../assets/pending-request.svg"), linear-gradient(0deg, #FAFAFA 0%, #FAFAFA var(--border-bottom), #003459 var(--border-bottom), #003459 var(--border-top), #A5E3FF var(--border-top), #A5E3FF 100%);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 530px, 100%;
+}
+@media (max-width: 767px) {
+  .bg {
+    --border-bottom: 14.9%;
+    --border-top: 15.7%;
+    height: 255px;
+    margin-top: -84px;
+    background-size: 265px, 100%;
+  }
+}
+
+.content {
+  width: 288px;
+  padding-bottom: 70px;
+  margin: 22px auto 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .content {
+    margin-top: 8px;
+  }
+}
+
+.message {
+  margin: 0 22px 24px;
+}
+
+.header {
+  margin: 0 0 8px;
+}
+
+.desc {
+  margin: 0 0 36px;
+}
+
+.desc2 {
+  margin: 0;
+}/*# sourceMappingURL=PendingRequest.module.css.map */

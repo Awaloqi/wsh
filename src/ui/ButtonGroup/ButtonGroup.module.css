@@ -1,0 +1,40 @@
+.buttonGroup {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.buttonGroup_item {
+  display: block;
+  width: 100%;
+  flex: 1 0 0;
+  padding: 4px 12px;
+  border: solid 3px #2EC35F;
+  border-left-width: 0;
+  background-color: #FFFFFF;
+  color: #003459;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.buttonGroup_item:focus {
+  outline: 0;
+}
+
+.buttonGroup_item:first-child {
+  border-left-width: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.buttonGroup_item:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.buttonGroup_item___active {
+  background-color: #2EC35F;
+  color: #FFFFFF;
+}/*# sourceMappingURL=ButtonGroup.module.css.map */

@@ -1,0 +1,42 @@
+@import '../../scss/site-variables';
+
+.buttonGroup {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.buttonGroup_item {
+  display: block;
+  width: 100%;
+  flex: 1 0 0;
+  padding: 4px 12px;
+  border: solid 3px $accent500;
+  border-left-width: 0;
+  background-color: $white;
+  color: $primary900;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.buttonGroup_item:focus {
+  outline: 0;
+}
+
+.buttonGroup_item:first-child {
+  border-left-width: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.buttonGroup_item:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.buttonGroup_item___active {
+  background-color: $accent500;
+  color: $white;
+}

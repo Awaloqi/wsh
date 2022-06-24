@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Fonts
+# Variables
+# Mixins
+# Typography
+# Body Style
+# Elements
+	## Buttons
+	## Progress Bar
+--------------------------------------------------------------*/
+
+@import 'scss/site-variables';
+@import 'scss/fonts';
+@import 'scss/body-style';
+@import 'scss/typography';
+@import 'scss/site-layout';
+
+@import 'components/Header/header';
+@import 'components/Footer/footer';
+@import 'components/BadgeContainer/badgeContainer';
+@import 'components/BadgeContainerHome/badgeContainerHome';
+@import 'components/BadgeContainerCheckout/badgeContainerCheckout';
+
+@import 'components/Home/home';
+@import 'components/Login/login';
+@import 'pages/welcome/Registration/registration';
+@import 'pages/welcome/Packages/packages';
+@import 'pages/welcome/Delivery/delivery';
+@import 'pages/welcome/Checkout/checkout';
+@import 'pages/welcome/Advantage/advantage';
+
+.Toastify__toast--success {
+  background-color: $primary500 !important;
+}
+
+.Toastify__toast--info {
+  background-color: $site-yellow !important;
+}
+
+.Toastify__toast--error {
+  background-color: #f2545b !important;
+}
+
+.disclaimercard{
+  padding: 27px;
+  border: 1px solid $grey300;
+  margin-bottom: 20px;
+  background-color: $white;
+    border-radius: 8px;
+    // color:#2ec35f;
+    font-size: small;
+
+}

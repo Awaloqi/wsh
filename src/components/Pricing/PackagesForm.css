@@ -1,0 +1,267 @@
+.packages-selection {
+  margin-top: 64px;
+}
+@media (max-width: 767px) {
+  .packages-selection {
+    margin-top: 24px;
+  }
+}
+.packages-selection .radio-btns {
+  display: none;
+}
+.packages-selection.form .radio-btns {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .packages-selection.form .radio-btns {
+    display: block;
+  }
+}
+.packages-selection.form .radio-btns .btn-group {
+  display: flex;
+  margin-top: 24px;
+}
+.packages-selection.form .radio-btns .btn-group button {
+  width: 100%;
+  height: 24px;
+  padding: 2px 0;
+  border: solid 0.5px #ddd;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  color: #003459;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.51px;
+  line-height: 1.67;
+}
+.packages-selection.form .radio-btns .btn-group button.active.PAYC {
+  background-color: #39B6ED;
+  color: #FFFFFF;
+}
+.packages-selection.form .radio-btns .btn-group button.active.GOLD, .packages-selection.form .radio-btns .btn-group button.active.PLATINUM {
+  background-color: #2EC35F;
+  color: #FFFFFF;
+}
+.packages-selection.form .table {
+  background-color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .packages-selection.form .table .col {
+    border: 0;
+  }
+}
+@media (max-width: 767px) {
+  .packages-selection.form .table .col .header {
+    padding-top: 0;
+  }
+  .packages-selection.form .table .col .header .title {
+    display: none !important;
+  }
+}
+.packages-selection.form .table .col .radio-btn-container {
+  display: flex;
+  height: 35px;
+  justify-content: center;
+}
+.packages-selection .header-image {
+  display: none;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .packages-selection .header-image {
+    display: block;
+  }
+}
+.packages-selection .table {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.packages-selection .table .header-image {
+  display: none;
+}
+@media (max-width: 767px) {
+  .packages-selection .table {
+    flex-direction: column-reverse;
+  }
+  .packages-selection .table .header-image {
+    display: block;
+  }
+}
+.packages-selection .table .col {
+  display: inline-block;
+  border: solid 1px #e0e0e0;
+}
+@media (max-width: 767px) {
+  .packages-selection .table .col {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+.packages-selection .table .col .header {
+  padding-top: 30px;
+  margin-bottom: 12px;
+  color: #003459;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.packages-selection .table .col .header .title {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.packages-selection .table .col .header .price {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.packages-selection .table .col .header .desc {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.packages-selection .table .col .item {
+  display: flex;
+  height: 56px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 900px) {
+  .packages-selection .table .col .item {
+    justify-content: center;
+  }
+}
+@media (min-width: 767px) {
+  .packages-selection .table .col .item:nth-of-type(2n + 3) {
+    background-color: rgba(238, 238, 238, 0.6);
+  }
+}
+.packages-selection .table .col .item .left {
+  display: none;
+}
+.packages-selection .table .col .item .left p {
+  display: block;
+  margin: 0;
+  color: #003459;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 2;
+}
+.packages-selection .table .col .item .left p.sub {
+  margin-top: -5px;
+  color: #757575;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+  .packages-selection .table .col .item .left {
+    display: block;
+    text-align: left;
+  }
+}
+.packages-selection .table .col .item .right p {
+  margin: 0;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.56;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .packages-selection .table .col .item .right p {
+    float: right;
+  }
+}
+.packages-selection .table .col .item .check {
+  color: #BDBDBD;
+  font-size: 48px;
+}
+.packages-selection .table .col .item .check.active {
+  color: #2EC35F;
+}
+.packages-selection .table .col.description {
+  flex: 2.25;
+}
+.packages-selection .table .col.description .img-container {
+  width: 100%;
+  text-align: center;
+}
+.packages-selection .table .col.description .item {
+  justify-content: flex-start;
+  text-align: left;
+}
+.packages-selection .table .col.description .item .left {
+  display: block;
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  .packages-selection .table .col.description {
+    display: none;
+  }
+}
+.packages-selection .table .col.stats {
+  flex: 1;
+  border-left-color: transparent;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .packages-selection .table .col.stats {
+    width: 100%;
+    border-left-color: #e0e0e0;
+  }
+}
+.packages-selection .table .col.stats.wider {
+  position: relative;
+  width: 30%;
+  flex: 2;
+}
+@media (max-width: 767px) {
+  .packages-selection .table .col.stats.wider {
+    width: 100%;
+  }
+}
+.packages-selection .table .col.stats.wider .header {
+  padding-top: 6px;
+}
+.packages-selection .table .col.stats.wider .header .title,
+.packages-selection .table .col.stats.wider .header .price,
+.packages-selection .table .col.stats.wider .header .desc {
+  font-weight: bold;
+}
+.packages-selection .table .col.stats.wider .header .title {
+  margin-top: 24px;
+}
+.packages-selection .table .col.stats.wider .badge {
+  position: absolute;
+  top: -13px;
+  right: 0;
+  left: 0;
+  width: 108px;
+  height: 24px;
+  padding: 2px;
+  margin: 0 auto;
+  background-color: #2EC35F;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .packages-selection .table .col.stats.wider .badge {
+    display: none;
+  }
+}/*# sourceMappingURL=PackagesForm.css.map */

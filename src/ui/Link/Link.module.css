@@ -1,0 +1,29 @@
+.link {
+  padding: 0;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  color: #39B6ED;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.71;
+  text-decoration: underline;
+}
+.link:hover, .link:active {
+  color: #1395CD;
+}
+.link:focus {
+  outline: 0;
+}
+
+.link__accent {
+  color: #2EC35F;
+}
+.link__accent:hover, .link__accent:active {
+  color: #1DAE43;
+}/*# sourceMappingURL=Link.module.css.map */

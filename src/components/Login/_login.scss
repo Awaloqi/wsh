@@ -1,0 +1,167 @@
+.login-component {
+  padding-top: 111px;
+  padding-bottom: 80px;
+
+  .registration-socialmedia {
+    p {
+      color: $grey800;
+    }
+  }
+  @media (min-width: $screen-sm) and (max-width: $screen-lg - 1px) {
+    padding-top: 40px;
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+
+      > .row {
+        margin: 0;
+      }
+
+      .register-form-section {
+        max-width: 100%;
+      }
+
+      .register-container {
+        padding: 0;
+      }
+
+      .registration-socialmedia,
+      .registration-form {
+        width: 50%;
+      }
+    }
+  }
+  @media (min-width: $screen-sm) and (max-width: $screen-md-max) {
+    padding-top: 0;
+
+    .container {
+      .registration-socialmedia,
+      .registration-form {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xs) {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .container {
+      .registration-socialmedia {
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+.register-form-section {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 996px;
+  margin: 0 auto;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px 0 $shadow-color;
+
+  .form-inner-wrapper {
+    display: table;
+    width: 100%;
+  }
+
+
+  .registration-socialmedia {
+    display: table-cell;
+    width: 50%;
+    padding: 45px 40px;
+    vertical-align: middle;
+
+    .registration-description {
+      margin-top: 0;
+      margin-bottom: 52px;
+      color: $grey800;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+
+    @media (max-width: $screen-md) {
+      display: inline-block;
+      width: calc(50% - 10px);
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: $screen-xs) {
+      display: inline-block;
+      width: 100%;
+      padding: 25px 0 0;
+
+      p {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .registration-form {
+    @extend .registration-socialmedia;
+    border-right: 1px solid $grey300;
+
+    h1 {
+      margin: 0 0 24px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .login-error {
+      margin-bottom: 20px;
+      color: $site-red;
+    }
+
+    .saveSession {
+      margin-bottom: 45px;
+    }
+    @media (max-width: $screen-xs) {
+      padding-top: 0 !important;
+      border: 0;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    display: block;
+    max-width: 768px;
+    border-radius: 0;
+  }
+
+  @media (max-width: $screen-xs) {
+    /*padding-bottom:60px;*/
+    padding-bottom: 40px;
+    box-shadow: none;
+  }
+}
+
+.login-component {
+  .privacy-policy {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $grey300;
+    float: none;
+
+    p {
+      margin: 0;
+      color: $primary900;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    @media (max-width: $screen-xs) {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@import '../../scss/site-variables';
+
+.delivery-fees {
+  display: grid;
+  border-top: 1px solid $grey400;
+  border-left: 1px solid $grey400;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+
+  > div {
+    padding: 11px 0;
+    border-right: 1px solid $grey400;
+    border-bottom: 1px solid $grey400;
+  }
+  b {
+    font-weight: 700;
+  }
+
+  @media (max-width: $screen-xs) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.delivery-fees__item1 {
+  background-color: $grey300;
+  grid-column: span 2;
+}
+.delivery-fees__item2 {
+  grid-column: span 2;
+  grid-row: 2 / auto;
+}
+.delivery-fees__item3 {
+  background-color: $grey300;
+  grid-column: span 6;
+  grid-row: 3 / auto;
+  @media (max-width: $screen-xs) {
+    grid-column: span 2;
+  }
+}
+.delivery-fees__item8 {
+  background-color: $grey300;
+  grid-column: 3 / span 4;
+  grid-row: 1;
+  @media (max-width: $screen-xs) {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
+.delivery-fees__item9 {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  @media (max-width: $screen-xs) {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
+.delivery-fees__item10 {
+  display: none;
+  background-color: $grey300;
+  @media (max-width: $screen-xs) {
+    display: block;
+    grid-column: span 2;
+  }
+}
+.delivery-fees__item11 {
+  grid-column: 3;
+  grid-row: 4;
+  @media (max-width: $screen-xs) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+.delivery-fees__item12 {
+  grid-column: 4;
+  grid-row: 4;
+  @media (max-width: $screen-xs) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+.delivery-fees__item15 {
+  grid-column: 5 / span 2;
+  grid-row: 2;
+  @media (max-width: $screen-xs) {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
+.delivery-fees__item16 {
+  display: none;
+  background-color: $grey300;
+  @media (max-width: $screen-xs) {
+    display: block;
+    grid-column: span 2;
+  }
+}
+.delivery-fees__item17 {
+  grid-column: 5;
+  grid-row: 4;
+  @media (max-width: $screen-xs) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+.delivery-fees__item18 {
+  grid-column: 6;
+  grid-row: 4;
+  @media (max-width: $screen-xs) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
