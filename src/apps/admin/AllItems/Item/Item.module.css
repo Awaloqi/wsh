@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   padding: 8px 8px 16px;
-  border: solid 1px #EEEEEE;
-  background-color: #FFFFFF;
+  border: solid 1px #EEE;
+  background-color: #FFF;
 }
 
 .item__img {
@@ -20,4 +20,4 @@
 
 .item__input {
   margin-bottom: 8px;
-}/*# sourceMappingURL=Item.module.css.map */
+}

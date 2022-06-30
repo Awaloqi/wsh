@@ -14,10 +14,10 @@
 .textarea__field {
   padding: 15px 32px 15px 17px;
   border: 1px solid #E0E0E0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
+  appearance: none;
+     appearance: none;
           appearance: none;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 6px;
   box-shadow: none;
   font-weight: 400;
@@ -31,7 +31,7 @@
   left: 20px;
   max-width: 100%;
   padding: 0 5px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   font-size: 14px;
   font-weight: 400;
 }
@@ -82,7 +82,7 @@
   border-radius: 100%;
 }
 
-@-webkit-keyframes loadingAnimation {
+@keyframes loadingAnimation {
   to {
     transform: rotate(360deg);
   }
@@ -95,4 +95,4 @@
 }
 .textarea__oval_error {
   background-color: #ED3939;
-}/*# sourceMappingURL=Textarea.module.css.map */
+}

@@ -2,8 +2,8 @@
   --border-bottom: 62%;
   min-width: 656px;
   padding: 170px 48px 32px;
-  background-color: #FFFFFF;
-  background-image: url("../../assets/pickup-truck.svg"), linear-gradient(0deg, #FFFFFF 0%, #FFFFFF var(--border-bottom), #39B6ED var(--border-bottom), #39B6ED 100%);
+  background-color: #FFF;
+  background-image: url("../../assets/pickup-truck.svg"), linear-gradient(0deg, #FFF 0%, #FFF var(--border-bottom), #39B6ED var(--border-bottom), #39B6ED 100%);
   background-position: center 33px, center;
   background-repeat: no-repeat;
   background-size: 98px, 100%;
@@ -28,7 +28,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  color: #FFFFFF;
+  color: #FFF;
   cursor: pointer;
   font-size: 48px;
   transition: transform 0.1s linear;
@@ -73,4 +73,4 @@
     margin-top: 12px;
     margin-left: unset;
   }
-}/*# sourceMappingURL=ModalReschedule.module.css.map */
+}

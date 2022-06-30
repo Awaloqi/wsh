@@ -21,6 +21,7 @@ import benefit2 from 'assets/new-ui/pricing/benefit2.png';
 import benefit3 from 'assets/new-ui/pricing/benefit3.png';
 import benefit4 from 'assets/new-ui/pricing/benefit4.png';
 import { BadgeContainer } from 'components/BadgeContainer';
+import { Header } from '../Header';
 
 type HowItemProps = {
   img: string;
@@ -49,6 +50,7 @@ const HowItem = ({ img, value, isRight }: HowItemProps) => {
 
 export const Pricing = () => {
   const { setZipCode, setAddressLine1 } = useAuth();
+  const { user, logout } = useAuth();
   const { data: zipCodes } = useQuery('locations', getZipCodes);
   const history = useHistory();
   const { openModal } = useModal();
@@ -76,9 +78,9 @@ export const Pricing = () => {
   }, [priceItems]);
 
   if (!priceItems) return null;
-
   return (
     <>
+      <Header logout={logout} user={user} />
       <Helmet>
         <title>WashMix — Pricing</title>
         <meta name="description" content="Pricing" />

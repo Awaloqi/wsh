@@ -39,7 +39,7 @@
   flex: 1 1 auto;
   margin-top: 12px;
   margin-bottom: 32px;
-  -moz-column-gap: 12px;
+  column-gap: 12px;
        column-gap: 12px;
   grid-template-columns: auto auto;
   overflow-y: auto;
@@ -58,4 +58,4 @@
 .button {
   flex: 1 0 auto;
   margin-bottom: 45px;
-}/*# sourceMappingURL=ModalPackage.module.css.map */
+}

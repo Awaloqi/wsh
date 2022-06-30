@@ -11,7 +11,7 @@
   padding: 4px 12px;
   border: solid 3px #2EC35F;
   border-left-width: 0;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   color: #003459;
   font-size: 16px;
   font-weight: normal;
@@ -36,5 +36,5 @@
 
 .buttonGroup_item___active {
   background-color: #2EC35F;
-  color: #FFFFFF;
-}/*# sourceMappingURL=ButtonGroup.module.css.map */
+  color: #FFF;
+}

@@ -15,7 +15,7 @@
 }
 
 .steps_content___rtl {
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 @media (min-width: 768px) {
   .steps_content___rtl {
@@ -63,7 +63,7 @@
   align-items: center;
   align-self: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   justify-items: center;
   justify-self: center;
 }
@@ -408,7 +408,7 @@
   align-items: center;
   padding: 10%;
   border: 1px solid rgba(57, 182, 237, 0.3137254902);
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 20px;
   text-align: center;
 }
@@ -539,4 +539,4 @@
     font-size: 50px;
     line-height: 70px;
   }
-}/*# sourceMappingURL=HowItWorks.module.css.map */
+}

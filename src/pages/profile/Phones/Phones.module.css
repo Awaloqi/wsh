@@ -1,8 +1,8 @@
 .phones {
   flex-grow: 1;
   padding: 27px 30px 54px;
-  border: 1px solid #EEEEEE;
-  background-color: #FFFFFF;
+  border: 1px solid #EEE;
+  background-color: #FFF;
 }
 @media (max-width: 1023px) {
   .phones {
@@ -45,7 +45,7 @@
   margin-bottom: 15px;
   background-color: #F47174;
   border-radius: 50px;
-  color: #FFFFFF;
+  color: #FFF;
   cursor: pointer;
   font-size: small;
   font-weight: 500;
@@ -116,21 +116,13 @@
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
           animation: fadeIn 1s;
   animation: fadeIn 1s;
   visibility: visible;
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -146,4 +138,12 @@
   to {
     opacity: 1;
   }
-}/*# sourceMappingURL=Phones.module.css.map */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

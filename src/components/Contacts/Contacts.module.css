@@ -52,7 +52,7 @@
   min-height: 240px;
   flex-basis: 100%;
   padding: 20px 0 32px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 8px;
   box-shadow: 5px 10px 30px rgba(57, 182, 237, 0.12);
 }
@@ -126,4 +126,4 @@
     font-size: 50px;
     line-height: 70px;
   }
-}/*# sourceMappingURL=Contacts.module.css.map */
+}

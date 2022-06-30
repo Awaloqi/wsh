@@ -25,6 +25,7 @@ import { getZipCodes } from 'services/apiClient';
 import { useAuth } from 'hooks';
 import { ContactsNew } from 'components/ContactsNew';
 import { Button } from 'ui';
+import { Header } from '../../components/Header';
 
 export const HowItWorks = () => {
   const { setZipCode, setAddressLine1 } = useAuth();
@@ -44,8 +45,10 @@ export const HowItWorks = () => {
     },
     [history, openModal, setAddressLine1, setZipCode, zipCodes],
   );
+  const { user, logout } = useAuth();
   return (
     <>
+      <Header logout={logout} user={user} />
       <Helmet>
         <title>WashMix — Нow it works?</title>
         <meta name="description" content="Нow it works?" />

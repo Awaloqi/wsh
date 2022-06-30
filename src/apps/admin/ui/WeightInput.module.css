@@ -8,10 +8,10 @@ input.weightInput__input {
   height: unset;
   padding: 7px 14px;
   border: 1px solid #E0E0E0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
+  appearance: none;
+     appearance: none;
           appearance: none;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 5px;
   color: #003459;
   font-size: 14px;
@@ -32,4 +32,4 @@ input.weightInput__input {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-}/*# sourceMappingURL=WeightInput.module.css.map */
+}

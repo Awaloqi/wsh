@@ -24,13 +24,13 @@ export const Header = ({ user, logout }: Props) => {
   const [prof, setProf] = useState<any>();
 
   const { getProfile } = useApi();
-  //////////не забыть убрать комент
-  // useEffect(() => {
-  //   if (!prof)
-  //     getProfile()
-  //       .then((res) => setProf(res))
-  //       .catch();
-  // });
+
+  useEffect(() => {
+    if (!prof)
+      getProfile()
+        .then((res) => setProf(res))
+        .catch();
+  });
 
   useEffect(() => {
     if (nav.current) {

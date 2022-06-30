@@ -10,6 +10,8 @@ import { sections } from './sections';
 import { ContactsNew } from 'components/ContactsNew';
 import { Button } from 'ui';
 import { BadgeContainer } from 'components/BadgeContainer';
+import { Header } from '../../components/Header';
+import { useAuth } from '../../hooks';
 
 export const Faq = () => {
   const [selectedSection, setSelectedSection] = useState<number | undefined>(0);
@@ -29,9 +31,10 @@ export const Faq = () => {
     },
     [setSelectedQuestion, selectedQuestion],
   );
-
+  const { user, logout } = useAuth();
   return (
     <>
+      <Header logout={logout} user={user} />
       <div className="container faqs-page">
         <Helmet>
           <title>WashMix — Frequently Asked Questions</title>

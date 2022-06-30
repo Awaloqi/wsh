@@ -20,7 +20,7 @@
 }
 
 .invoice__right {
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 .description {
@@ -28,4 +28,4 @@
 }
 .description *:first-child {
   margin-right: 8px;
-}/*# sourceMappingURL=Invoice.module.css.map */
+}

@@ -95,14 +95,14 @@
   top: -12px;
   right: 0;
   left: 0;
-  width: -webkit-max-content;
-  width: -moz-max-content;
+  width: max-content;
+  width: max-content;
   width: max-content;
   padding: 2px 12px;
   margin: auto;
   background-color: #2EC35F;
   border-radius: 3px;
-  color: #FFFFFF;
+  color: #FFF;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
@@ -125,7 +125,7 @@
 }
 
 .table__row:nth-child(even) {
-  background-color: #EEEEEE;
+  background-color: #EEE;
 }
 
 .table__row___values {
@@ -167,4 +167,4 @@
 
 .table__icon___active {
   color: #2EC35F;
-}/*# sourceMappingURL=PricingTable.module.css.map */
+}

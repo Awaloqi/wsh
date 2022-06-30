@@ -19,7 +19,7 @@
   height: 400px;
   flex-direction: column;
   padding: 31px 28px 80px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -47,7 +47,7 @@
   height: 500px;
   align-items: center;
   padding: 35px;
-  background-image: url("../../assets/pickup-truck.svg"), linear-gradient(0deg, #FFFFFF 0%, #FFFFFF var(--border-bottom), #003459 var(--border-bottom), #003459 var(--border-top), #A5E3FF var(--border-top), #A5E3FF 100%);
+  background-image: url("../../assets/pickup-truck.svg"), linear-gradient(0deg, #FFF 0%, #FFF var(--border-bottom), #003459 var(--border-bottom), #003459 var(--border-top), #A5E3FF var(--border-top), #A5E3FF 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 196px, 100%;
@@ -90,7 +90,7 @@
   right: 12px;
   bottom: 0;
   left: 12px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEE;
   content: "";
 }
 @media (max-width: 767px) {
@@ -117,4 +117,4 @@
   .upcoming_reschedule {
     align-self: center;
   }
-}/*# sourceMappingURL=UpcomingOrders.module.css.map */
+}

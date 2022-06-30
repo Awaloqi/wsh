@@ -15,7 +15,7 @@
 }
 
 .price-table__header {
-  background-color: #EEEEEE;
+  background-color: #EEE;
   font-weight: 500;
 }
 @media (max-width: 767px) {
@@ -43,6 +43,6 @@
   padding: 8px 4px;
   border: 1px solid #E0E0E0;
   border-bottom: 0;
-  background-color: #EEEEEE;
+  background-color: #EEE;
   text-align: center;
-}/*# sourceMappingURL=PriceTable.css.map */
+}

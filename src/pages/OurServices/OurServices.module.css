@@ -43,7 +43,7 @@
   align-items: center;
   justify-content: center;
   padding: 64px 16px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 16px;
 }
 @media (min-width: 768px) {
@@ -485,4 +485,4 @@
   .all_services_tag {
     font-size: small;
   }
-}/*# sourceMappingURL=OurServices.module.css.map */
+}

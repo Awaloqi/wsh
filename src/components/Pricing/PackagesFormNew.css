@@ -74,8 +74,8 @@
 
 .option1 {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+  height: fit-content;
+  height: fit-content;
   height: fit-content;
   padding: 1%;
   border: 1px solid #EDEDED;
@@ -143,4 +143,4 @@
   .option2_title {
     font-size: large;
   }
-}/*# sourceMappingURL=PackagesFormNew.css.map */
+}

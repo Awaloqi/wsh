@@ -5,7 +5,8 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
 import styles from './Header.module.scss';
 import { Menu } from 'ui';
 import { Profile } from 'icons';
-import logo from '../../assets/logo-top.png';
+//import logo from '../../assets/logo-top.png';
+import logo from '../../assets/newImages/logo.svg';
 import requestPickupIcon from '../../assets/request-pickup.svg';
 import myAccountIcon from '../../assets/my-account.svg';
 import upcomingOrdersIcon from '../../assets/upcoming-orders.svg';
@@ -18,19 +19,22 @@ type Props = {
 
 const MenuLink = ({ children }: { children: ReactNode }) => <span>{children}</span>;
 
-export const Header = ({ user, logout }: Props) => {
+export const LightHeader = ({ user, logout }: Props) => {
   const nav = useRef(null as HTMLUListElement | null);
   const [isOpen, setOpen] = useState(false);
   const [prof, setProf] = useState<any>();
 
   const { getProfile } = useApi();
-  //////////не забыть убрать комент
-  // useEffect(() => {
-  //   if (!prof)
-  //     getProfile()
-  //       .then((res) => setProf(res))
-  //       .catch();
-  // });
+
+  useEffect(() => {
+    if (!prof)
+      getProfile()
+        .then((res) => setProf(res))
+        .catch();
+  });
+
+  const [styleHeder, setStyleHeder] = useState({ backgroundColor: 'transparent' });
+  const [colorTextLogo, setColorTextLogo] = useState({ color: '#FFF' });
 
   useEffect(() => {
     if (nav.current) {
@@ -46,6 +50,10 @@ export const Header = ({ user, logout }: Props) => {
 
   const handleMenuClick = () => {
     setOpen(!isOpen);
+    styleHeder.backgroundColor === '#FFF'
+      ? setStyleHeder({ backgroundColor: 'transparent' })
+      : setStyleHeder({ backgroundColor: '#FFF' });
+    colorTextLogo.color === '#FFF' ? setColorTextLogo({ color: '#003459' }) : setColorTextLogo({ color: '#FFF' });
   };
 
   const handleLogoutClick = () => {
@@ -57,12 +65,14 @@ export const Header = ({ user, logout }: Props) => {
   const closeMenu = () => {
     setOpen(false);
   };
-
   return (
-    <header className={styles.header}>
+    <header className="new-header" style={styleHeder}>
       <div className={styles.header__wrapper}>
         <Link to="/" className={styles.header__brand} onClick={closeMenu}>
-          <img alt="WashMix Logo" src={logo} width="170px" height="48px" />
+          <img alt="WashMix Logo" src={logo} width="48px" height="48px" />
+          <span className="text-logo" style={colorTextLogo}>
+            washmix<label>&#174;</label>
+          </span>
         </Link>
         <nav className={styles.nav}>
           <button
@@ -78,7 +88,11 @@ export const Header = ({ user, logout }: Props) => {
               </div>
             </div>
           </button>
-          <ul className={cn(styles.nav__wrapper, { [styles.nav__wrapper___active]: isOpen })} ref={nav}>
+          <ul
+            className={cn(styles.nav__wrapper, { [styles.nav__wrapper___active]: isOpen })}
+            ref={nav}
+            style={{ marginTop: '-5px' }}
+          >
             {user?.token && (
               <>
                 <li className={cn(styles.nav__item, styles.nav__item___mobile)}>

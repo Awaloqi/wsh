@@ -135,7 +135,7 @@
   padding: 24px 16px;
   border-bottom: 12px solid #FAFAFA;
   margin: 0 12px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 @media (max-width: 767px) {
   .pricing .item-prices .price-details .details {
@@ -478,4 +478,4 @@
   color: #003459;
   font-size: 17px;
   font-weight: bold;
-}/*# sourceMappingURL=Pricing.css.map */
+}

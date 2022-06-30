@@ -26,9 +26,9 @@
   margin: 0;
   font-weight: inherit;
   letter-spacing: 0.51px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
+     user-select: none;
+      user-select: none;
           user-select: none;
 }
 
@@ -82,4 +82,4 @@
 
 .checkbox__errorMessage {
   color: #ED3939;
-}/*# sourceMappingURL=Checkbox.module.css.map */
+}

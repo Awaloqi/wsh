@@ -172,3 +172,46 @@
     }
   }
 }
+
+
+
+.Header_header__1v0yI {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+/*********new-header************/
+.new-header{
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  .Header_nav__link__2O5GH{
+    color: #fff;
+  }
+  .Header_nav__LNsaU{
+    .Header_nav__wrapper___active__3Q3cf{
+      .Header_nav__item__1FJmV{
+        a{
+          color: #003459;
+        }
+      }
+    }
+  }
+  .Header_hamburger__inner__2m8S1, .Header_hamburger__inner__2m8S1::before, .Header_hamburger__inner__2m8S1::after{
+    background-color: #FFF;
+  }
+  .Header_hamburger___isActive__26Ocz{
+    .Header_hamburger__inner__2m8S1, .Header_hamburger__inner__2m8S1::before, .Header_hamburger__inner__2m8S1::after{
+      background-color: #003459;
+    }
+  }
+  .text-logo{
+    margin-left: 10px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    label{
+      font-size: 5px;
+    }
+  }
+}

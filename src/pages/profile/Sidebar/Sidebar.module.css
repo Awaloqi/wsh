@@ -1,9 +1,9 @@
 .sidebar {
-  position: -webkit-sticky;
+  position: sticky;
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -15,7 +15,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     background-color: rgba(33, 33, 33, 0.7529411765);
     content: "";
@@ -29,8 +29,8 @@
   justify-content: center;
   padding: 8px 0;
   border: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
+  appearance: none;
+     appearance: none;
           appearance: none;
   background-color: transparent;
   font-size: 12px;
@@ -68,7 +68,7 @@
     right: 0;
     left: 0;
     padding: 12px 28px 20px;
-    background-color: #FFFFFF;
+    background-color: #FFF;
   }
 }
 
@@ -82,7 +82,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 8px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEE;
   margin-bottom: 12px;
 }
 
@@ -121,4 +121,4 @@
   font-weight: 500;
   letter-spacing: normal;
   line-height: 1.2;
-}/*# sourceMappingURL=Sidebar.module.css.map */
+}

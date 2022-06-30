@@ -17,7 +17,7 @@
 }
 .closeBtn button {
   border: 0;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   color: #003459;
   font-size: 16px;
   font-weight: 500;
@@ -122,4 +122,4 @@
 
 .monospace {
   font-family: Courier, monospace;
-}/*# sourceMappingURL=legal.css.map */
+}

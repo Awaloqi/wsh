@@ -22,7 +22,7 @@
   max-width: 436px;
   padding: 33px 40px;
   margin: auto;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -65,4 +65,4 @@
 
 .pickup_confirm {
   margin: 40px 0 0;
-}/*# sourceMappingURL=Pickup.module.css.map */
+}

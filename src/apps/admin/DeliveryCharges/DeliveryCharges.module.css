@@ -4,8 +4,8 @@
 
 .deliveryCharges__list {
   padding: 16px;
-  border: solid 1px #EEEEEE;
-  background-color: #FFFFFF;
+  border: solid 1px #EEE;
+  background-color: #FFF;
 }
 @media (min-width: 768px) {
   .deliveryCharges__list {
@@ -20,4 +20,4 @@
 }
 .deliveryCharges__item:not(:last-child) {
   margin-bottom: 12px;
-}/*# sourceMappingURL=DeliveryCharges.module.css.map */
+}

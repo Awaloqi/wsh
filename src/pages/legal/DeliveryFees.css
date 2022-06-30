@@ -20,7 +20,7 @@
 }
 
 .delivery-fees__item1 {
-  background-color: #EEEEEE;
+  background-color: #EEE;
   grid-column: span 2;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .delivery-fees__item3 {
-  background-color: #EEEEEE;
+  background-color: #EEE;
   grid-column: span 6;
   grid-row: 3/auto;
 }
@@ -41,7 +41,7 @@
 }
 
 .delivery-fees__item8 {
-  background-color: #EEEEEE;
+  background-color: #EEE;
   grid-column: 3/span 4;
   grid-row: 1;
 }
@@ -65,7 +65,7 @@
 
 .delivery-fees__item10 {
   display: none;
-  background-color: #EEEEEE;
+  background-color: #EEE;
 }
 @media (max-width: 767px) {
   .delivery-fees__item10 {
@@ -109,7 +109,7 @@
 
 .delivery-fees__item16 {
   display: none;
-  background-color: #EEEEEE;
+  background-color: #EEE;
 }
 @media (max-width: 767px) {
   .delivery-fees__item16 {
@@ -138,4 +138,4 @@
     grid-column: auto;
     grid-row: auto;
   }
-}/*# sourceMappingURL=DeliveryFees.css.map */
+}

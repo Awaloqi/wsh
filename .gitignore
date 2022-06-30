@@ -5,7 +5,7 @@
 
 # dependencies
 /node_modules
-
+/static
 # testing
 /coverage
 

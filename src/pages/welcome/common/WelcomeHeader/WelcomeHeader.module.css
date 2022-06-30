@@ -2,7 +2,7 @@
   --navbar-width: 792px;
   --link-width: 180px;
   --link-space: 24px;
-  position: -webkit-sticky;
+  position: sticky;
   position: sticky;
 }
 @media (max-width: 1439px) {
@@ -14,7 +14,7 @@
 }
 
 .navbar {
-  background-color: #FFFFFF;
+  background-color: #FFF;
   text-align: center;
 }
 
@@ -78,7 +78,7 @@
   transition: background-color 200ms ease-in, color 200ms ease-in;
 }
 .navbar_link:hover {
-  background-color: #EEEEEE;
+  background-color: #EEE;
   color: #003459;
   text-decoration: none;
 }
@@ -185,4 +185,4 @@
     width: 50%;
     transform: translate(100vw);
   }
-}/*# sourceMappingURL=WelcomeHeader.module.css.map */
+}

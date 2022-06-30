@@ -93,8 +93,8 @@ export const FAQHome = () => {
                 <p style={{ fontSize: 'larger' }}>See if we service your area</p>
                 <GooglePlaces onSubmit={handleSubmit} />
             </div>
-            <ContactsNew />
-            <BadgeContainerNew />
+            {/* <ContactsNew />
+            <BadgeContainerNew /> */}
         </div>
     </section>
   );

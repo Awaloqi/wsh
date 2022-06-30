@@ -9,8 +9,8 @@
   padding: 10px 10px 10px 5px;
   border: 0;
   border-bottom: 2px solid #003459;
-  -webkit-appearance: none;
-     -moz-appearance: none;
+  appearance: none;
+     appearance: none;
           appearance: none;
   background-color: transparent;
   border-radius: 0;
@@ -120,10 +120,10 @@
 
 .input__dropdown_item_active {
   background: #39B6ED;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .input__dropdown_item_active:hover,
 .input__dropdown_item_active:focus {
   background: #ccc;
-}/*# sourceMappingURL=InputMD.module.css.map */
+}

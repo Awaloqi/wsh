@@ -23,9 +23,9 @@
   margin: 0;
   font-weight: inherit;
   letter-spacing: 0.51px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
+     user-select: none;
+      user-select: none;
           user-select: none;
 }
 
@@ -57,7 +57,7 @@
   width: 16px;
   height: 16px;
   border: 1px solid #BDBDBD;
-  background: #FFFFFF;
+  background: #FFF;
   border-radius: 50%;
   content: "";
   cursor: pointer;
@@ -93,10 +93,10 @@
 
 .switch__field:checked ~ .switch__label > .switch__gauge::before {
   left: 8px;
-  color: #FFFFFF;
+  color: #FFF;
   content: "On";
 }
 
 .switch__errorMessage {
   color: #ED3939;
-}/*# sourceMappingURL=Switch.module.css.map */
+}

@@ -31,7 +31,7 @@
 }
 .faqs-page .section-headings ul {
   padding: 27px 12px;
-  border: solid 1px #EEEEEE;
+  border: solid 1px #EEE;
   list-style: none;
 }
 .faqs-page .section-headings ul li {
@@ -61,12 +61,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: solid 1px #EEEEEE;
+  border-bottom: solid 1px #EEE;
   cursor: pointer;
 }
 .faqs-page .section-content .wm-collapse .heading.is-open,
 .faqs-page .section-content .wm-collapse.question .heading.is-open {
-  border-bottom-color: #FFFFFF;
+  border-bottom-color: #FFF;
 }
 .faqs-page .section-content .wm-collapse .heading .title,
 .faqs-page .section-content .wm-collapse.question .heading .title {
@@ -85,7 +85,7 @@
 .faqs-page .section-content .wm-collapse .description.is-open,
 .faqs-page .section-content .wm-collapse.question .description.is-open {
   padding-bottom: 15px;
-  border-bottom: solid 0.5px #EEEEEE;
+  border-bottom: solid 0.5px #EEE;
 }
 .faqs-page .section-content .wm-collapse .description.is-close,
 .faqs-page .section-content .wm-collapse.question .description.is-close {
@@ -127,7 +127,7 @@
     background-color: #003459;
   }
   .faqs-page .list .list-item .wm-collapse.section-item > .heading.is-open .title {
-    color: #FFFFFF;
+    color: #FFF;
   }
   .faqs-page .list .list-item .wm-collapse.section-item > .heading.is-close {
     border: solid 0.5px #efefef;
@@ -138,7 +138,7 @@
     color: #003459;
   }
   .faqs-page .list .list-item .wm-collapse.section-item > .heading .title {
-    color: #FFFFFF;
+    color: #FFF;
   }
   .faqs-page .list .list-item .wm-collapse.section-item > .heading .heading {
     height: 100px;
@@ -182,4 +182,4 @@
     font-size: 50px;
     line-height: 70px;
   }
-}/*# sourceMappingURL=faq.css.map */
+}

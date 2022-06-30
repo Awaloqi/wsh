@@ -18,7 +18,7 @@ const AuthContext = createContext({
   zipCode: '' as string | undefined,
   addressLine1: '' as string | undefined,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  setZipCode: (() => {}) as (zipCode?: string) => void,
+  setZipCode: ((zipCode: string) => {}) as (zipCode?: string) => void,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   setAddressLine1: (() => {}) as (setAddressLine1?: string) => void,
 });

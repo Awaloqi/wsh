@@ -1,6 +1,6 @@
 .allItems .allItems__button {
-  width: -webkit-max-content;
-  width: -moz-max-content;
+  width: max-content;
+  width: max-content;
   width: max-content;
   flex-grow: 1;
 }
@@ -15,4 +15,4 @@
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
-}/*# sourceMappingURL=AllItems.module.css.map */
+}

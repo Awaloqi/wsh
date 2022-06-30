@@ -1,8 +1,8 @@
 .link {
   padding: 0;
   border: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
+  appearance: none;
+     appearance: none;
           appearance: none;
   background: none;
   color: #39B6ED;
@@ -26,4 +26,4 @@
 }
 .link__accent:hover, .link__accent:active {
   color: #1DAE43;
-}/*# sourceMappingURL=Link.module.css.map */
+}

@@ -12,7 +12,7 @@
 
 .modal__content {
   padding: 24px 20px 55px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 .modal__title {
@@ -35,7 +35,7 @@
   display: block;
   padding: 14px 0;
   background-color: #2EC35F;
-  color: #FFFFFF;
+  color: #FFF;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
@@ -44,11 +44,11 @@
 }
 .modal__link:hover {
   background-color: #6AD57E;
-  color: #FFFFFF;
+  color: #FFF;
   text-decoration: none;
 }
 .modal__link:active, .modal__link:focus {
   background-color: #1DAE43;
-  color: #FFFFFF;
+  color: #FFF;
   text-decoration: none;
-}/*# sourceMappingURL=AdvantageModal.module.css.map */
+}

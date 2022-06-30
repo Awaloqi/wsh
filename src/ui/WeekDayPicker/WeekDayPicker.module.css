@@ -13,7 +13,7 @@
   justify-content: space-between;
   padding: 0 16px;
   border: 1px solid #E0E0E0;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 5px;
   color: #BDBDBD;
   font-size: 16px;
@@ -37,7 +37,7 @@
 
 .day_selected {
   background-color: #39B6ED;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .day_disabled {
@@ -103,7 +103,7 @@
   padding: 2% 4%;
   background-color: #2F7B40;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #FFF;
   cursor: pointer;
 }
 
@@ -111,6 +111,6 @@
   padding: 2% 4%;
   background-color: #ED3939;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #FFF;
   cursor: pointer;
-}/*# sourceMappingURL=WeekDayPicker.module.css.map */
+}

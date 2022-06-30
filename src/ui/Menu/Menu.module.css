@@ -6,12 +6,12 @@
   align-items: center;
   padding: 4px 8px;
   border: 0;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   color: inherit;
   line-height: 0;
 }
 .menu .menu__button:hover {
-  background-color: #EEEEEE;
+  background-color: #EEE;
 }
 .menu .menu__button:focus {
   outline: none;
@@ -28,7 +28,7 @@
   padding: 0;
 }
 .menu .menu__item:hover, .menu .menu__item:focus, .menu .menu__item:active {
-  background-color: #EEEEEE;
+  background-color: #EEE;
   color: #003459;
 }
 .menu .menu__link {
@@ -47,8 +47,8 @@
   width: 100%;
   padding: 11px 24px;
   border: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
+  appearance: none;
+     appearance: none;
           appearance: none;
   background-color: transparent;
   font-size: 16px;
@@ -60,11 +60,11 @@
 }
 .menu .menu__divider {
   margin: 8px 0;
-  background-color: #EEEEEE;
+  background-color: #EEE;
 }
 .menu .menu__header {
   padding: 11px 24px;
   color: #003459;
   font-size: inherit;
   text-transform: none;
-}/*# sourceMappingURL=Menu.module.css.map */
+}

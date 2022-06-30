@@ -72,21 +72,13 @@
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
           animation: fadeIn 1s;
   animation: fadeIn 1s;
   visibility: visible;
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -102,4 +94,12 @@
   to {
     opacity: 1;
   }
-}/*# sourceMappingURL=Profile.module.css.map */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

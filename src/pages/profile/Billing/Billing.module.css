@@ -10,8 +10,8 @@
 
 .card {
   padding: 27px 30px 54px;
-  border: 1px solid #EEEEEE;
-  background-color: #FFFFFF;
+  border: 1px solid #EEE;
+  background-color: #FFF;
 }
 
 .card + .card {
@@ -124,14 +124,14 @@
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
           animation: fadeIn 1s;
   animation: fadeIn 1s;
   visibility: visible;
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -206,8 +206,8 @@
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
           animation: fadeIn 1s;
   animation: fadeIn 1s;
   visibility: visible;
-}/*# sourceMappingURL=Billing.module.css.map */
+}

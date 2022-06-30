@@ -17,10 +17,10 @@
   height: 48px;
   padding: 0 2rem 0 1rem;
   border: 1px solid #e0e0e0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
+  appearance: none;
+     appearance: none;
           appearance: none;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border-radius: 6px;
   box-shadow: none;
   font-weight: 400;
@@ -78,7 +78,7 @@
   border-radius: 100%;
 }
 
-@-webkit-keyframes loadingAnimation {
+@keyframes loadingAnimation {
   to {
     transform: rotate(360deg);
   }
@@ -139,10 +139,10 @@
 
 .input__dropdown_item_active {
   background: #39B6ED;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .input__dropdown_item_active:hover,
 .input__dropdown_item_active:focus {
   background: #74CBF2;
-}/*# sourceMappingURL=Input.module.css.map */
+}

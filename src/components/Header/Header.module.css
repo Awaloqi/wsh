@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 .header__wrapper {
@@ -68,7 +68,7 @@
     left: 0;
     height: calc(100vh - 84px);
     padding: 64px 0;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     opacity: 0;
     overflow-y: scroll;
     transform: translateY(-100%);
@@ -127,7 +127,7 @@
   line-height: 1.5;
   outline: 0;
   text-align: center;
-  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
           text-decoration-line: none;
 }
 @media (min-width: 1024px) {
@@ -142,9 +142,9 @@
   content: attr(data-text);
   font-weight: 700;
   pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
+     user-select: none;
+      user-select: none;
           user-select: none;
   visibility: hidden;
 }
@@ -153,7 +153,7 @@
 .nav__link:focus,
 .nav__link:hover {
   font-weight: 700;
-  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
           text-decoration-line: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 7px;
@@ -163,15 +163,15 @@
   display: inline-block;
   padding: 14px 16px;
   border: 0;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   color: #2EC35F;
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
+     user-select: none;
+      user-select: none;
           user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -184,7 +184,7 @@
     margin-left: 20px;
     background-color: #2EC35F;
     border-radius: 20px;
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 14px;
     font-weight: 500;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
@@ -193,7 +193,7 @@
 .nav__button:hover {
   color: #2EC35F;
   font-weight: 700;
-  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
           text-decoration-line: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 7px;
@@ -201,7 +201,7 @@
 @media (min-width: 1024px) {
   .nav__button:hover {
     background-color: #6AD57E;
-    color: #FFFFFF;
+    color: #FFF;
     font-weight: 500;
     text-decoration: none;
   }
@@ -288,4 +288,4 @@
   width: 24px;
   height: 24px;
   margin-right: 12px;
-}/*# sourceMappingURL=Header.module.css.map */
+}

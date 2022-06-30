@@ -13,7 +13,7 @@
   overflow: auto;
   align-items: center;
   padding: 8px;
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background-color: rgba(33, 33, 33, 0.7529411765);
   opacity: 0;
@@ -103,4 +103,4 @@
 }
 :global .ReactModal__Content--before-close {
   transform: translateY(-50px);
-}/*# sourceMappingURL=Modal.module.css.map */
+}

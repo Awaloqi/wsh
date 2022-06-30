@@ -32,8 +32,10 @@ import as6 from 'assets/new-ui/services/as6.png';
 import as7 from 'assets/new-ui/services/as7.png';
 import as8 from 'assets/new-ui/services/as8.png';
 import { BadgeContainer } from 'components/BadgeContainer';
+import { Header } from '../../components/Header';
 
 export const OurServices = () => {
+  const { user, logout } = useAuth();
   const { setZipCode, setAddressLine1 } = useAuth();
   const { data: zipCodes } = useQuery('locations', getZipCodes);
   const history = useHistory();
@@ -53,6 +55,7 @@ export const OurServices = () => {
   );
   return (
     <>
+      <Header logout={logout} user={user} />
       <Helmet>
         <title>WashMix — Our Services</title>
         <meta name="description" content="Our Services" />
